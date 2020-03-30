@@ -1,0 +1,46 @@
+.principal-column {
+  margin: 0 20px;
+}
+.articles-container {
+  width: 320px;
+  align-self: center;
+  @media all and (min-width: 768px) {
+    align-self: flex-start;
+    width: 380px;
+  }
+}
+
+.collapsible {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d8d8d8;
+  border-left: 0;
+}
+
+.collapsable--open .collapsible__content {
+  display: grid;
+}
+.collapsable--open .collapsible__header--arrow-icon {
+  transform: rotate(180deg);
+  padding-right: 144px;
+  @media all and (min-width: 768px) {
+    padding-right: 172px;
+  }
+}
+.collapsable--open .collapsible__header--arrow-icon--share {
+  padding-right: 132px;
+  font-size: 18px;
+  color: #54585a;
+  transform: rotate(180deg);
+  @media all and (min-width: 768px) {
+    padding-right: 172px;
+  }
+}
+.collapsable--open2 .collapsible__content2--twitter {
+  display: flex;
+}
+
+@import 'components/_forms-design';
+@import 'components/_forms-fill';
+@import 'components/_forms-share';
+@import 'components/shareTwitter';

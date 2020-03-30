@@ -1,0 +1,86 @@
+.collapsible {
+  &__header {
+    &--design {
+      padding-top: 27px;
+      padding-bottom: 10px;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 2fr;
+    }
+    &--icon {
+      color: #e17334;
+      font-size: 18px;
+      align-self: center;
+    }
+    &--title {
+      font-family: 'Open Sans';
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #54585a;
+    }
+    &--arrow-icon {
+      color: #54585a;
+      font-size: 18px;
+      text-align: end;
+      align-self: center;
+    }
+  }
+  &__content {
+    margin-top: 22px;
+    margin-left: 20px;
+    display: none;
+    &--title {
+      font-family: 'Open Sans';
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #54585a;
+    }
+    &--position {
+      padding-left: 145px;
+      @media all and (min-width: 768px) {
+        padding-left: 194px;
+      }
+    }
+    &__palette {
+      display: flex;
+      margin-bottom: 20px;
+      &--radio {
+        align-self: center;
+      }
+      &--box {
+        width: 30px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+.bg-dark-green {
+  background-color: #114e4e;
+  margin-left: 10px;
+}
+.bg-dirty-blue {
+  background-color: #438792;
+}
+.bg-hospital-green {
+  background-color: #a2deaf;
+}
+.bg-dried-blood {
+  background-color: #420101;
+  margin-left: 10px;
+}
+.bg-rusty-red {
+  background-color: #bd1010;
+}
+.bg-tomato {
+  background-color: #e95626;
+}
+.bg-slate {
+  background-color: #3e5b65;
+  margin-left: 10px;
+}
+.bg-faded-orange {
+  background-color: #eab052;
+}
+.bg-light-grey-blue {
+  background-color: #a0c0cf;
+}
