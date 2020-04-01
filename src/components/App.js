@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import '../stylesheets/App.scss';
+import UserInterface from './UserInterface';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Footer />
+      <UserInterface/>
+      
     </div>
   );
 }
