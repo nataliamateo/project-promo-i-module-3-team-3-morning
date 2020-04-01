@@ -2,13 +2,14 @@ import React from 'react';
 import '../stylesheets/Form.scss';
 import Design from './Design';
 import Fill from './Fill';
+import Share from './Share';
 
 const Form = () => (
   <form action="" method="POST" class="articles-container">
     <div class="principal-column">
       <Design />
-      <Fill/>
-      <partial src="_forms-share.html"></partial>
+      <Fill />
+      <Share />
     </div>
   </form>
 );

@@ -1,0 +1,33 @@
+.collapsible__header--share {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 0.5fr 1fr 2fr;
+  }
+  .collapsible__header--icon {
+    font-size: 18px;
+    text-align: center;
+    color: #e17334;
+  }
+  
+  .collapsible__header--arrow-icon--share {
+    font-size: 18px;
+    color: #54585a;
+    text-align: end;
+    align-self: center;
+  }
+  
+  .collapsible__header__title {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #54585a;
+  }
+  .twitter {
+    margin-bottom: 30px;
+  }
+  

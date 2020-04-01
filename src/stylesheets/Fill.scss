@@ -28,7 +28,7 @@
   }
   
   .collapsible__content {
-    // display: none;
+    display: none;
     &--style-text {
       font-family: "Open Sans";
       font-size: 14px;
@@ -80,25 +80,25 @@
     font-weight: bold;
   }
   
-  // IMAGEN
+  IMAGEN
   
-//   .action {
-//     text-align: center;
-//   }
-//   .action__upload-btn {
-//     box-shadow: 0 0 5px rgba(#000, 0.3);
-//     box-sizing: border-box;
-//     font-family: "Open Sans";
-//     font-size: 14px;
-//   }
-//   .action__hiddenField {
-//     // display: none;
-//     position: relative;
-//     left: -140px;
-//   }
+  .action {
+    text-align: center;
+  }
+  .action__upload-btn {
+    box-shadow: 0 0 5px rgba(#000, 0.3);
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-size: 14px;
+  }
+  .action__hiddenField {
+    display: none;
+    position: relative;
+    left: -140px;
+  }
   
-//   .profile__preview {
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
+  .profile__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
