@@ -4,12 +4,18 @@ import Design from './Design';
 import Fill from './Fill';
 import Share from './Share';
 
-const Form = () => (
+const Form = (props) => (
   <form action="" method="POST" class="articles-container">
     <div class="principal-column">
-      <Design />
-      <Fill />
-      <Share />
+      <Collapsable>
+        <Design />
+      </Collapsable>
+      <Collapsable>
+        <Fill handleInput={props.handleInput} />
+      </Collapsable>
+      <Collapsable>
+        <Share />
+      </Collapsable>
     </div>
   </form>
 );
