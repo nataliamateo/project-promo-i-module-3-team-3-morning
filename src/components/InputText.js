@@ -16,7 +16,7 @@ const InputText = (props) => {
       <input 
         required
         className="js-input-name js-input-text collapsible__content--input-form" 
-        type="text" 
+        type={props.inputType} 
         placeholder={props.inputPlaceholder} 
         id={props.id} 
         name={props.inputName} 

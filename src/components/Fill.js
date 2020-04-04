@@ -24,6 +24,30 @@ const Fill = (props) => (
         inputPlaceholder="Ej: Front-end"
         handleInput={props.handleInput}
       />
+       <InputText
+        id="phone"
+        labelText="Teléfono"
+        inputName="phone"
+        inputType= "tel"
+        inputPlaceholder="Ej: 555-55-55-55"
+        handleInput={props.handleInput}
+      />
+        <InputText
+        id="email"
+        labelText="Email"
+        inputName="email"
+        inputType= "email"
+        inputPlaceholder="Ej: sally-hill@gmail.com"
+        handleInput={props.handleInput}
+      />
+        <InputText
+        id="linkedin"
+        labelText="Linkedin"
+        inputName="linkedin"
+        inputType= "linkedin"
+        inputPlaceholder="Ej: linkedin.com/in/sally.hill"
+        handleInput={props.handleInput}
+      />
       {/* <label className="collapsible__content--style-text" htmlFor="image"> Imagen de perfil</label>
       <div className=" action collapsible__content--container-button">
         <button className="action__upload-btn js__profile-trigger collapsible__content--style-text--button" type="button">Añadir imagen</button>
@@ -32,20 +56,14 @@ const Fill = (props) => (
       <div className="profile">
         <div className="js__profile-preview collapsible__content--container-button--image-box"></div>
       </div> */}
-      <label className="collapsible__content--style-text required" htmlFor="phone"> Teléfono</label>
-      <input className="js-input-phone js-input-text collapsible__content--input-form" placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required />
-      <div>
-        <label className="collapsible__content--style-text required" htmlFor="email"> Email</label>
-        <input className="js-input-email  js-input-text collapsible__content--input-form" placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email" required />
-      </div>
-      <div>
-        <label className="collapsible__content--style-text required" htmlFor="linkedin"> Linkedin</label>
-        <input className="js-input-linkedin js-input-text collapsible__content--input-form" placeholder="Ej: linkedin.com/in/sally.hill" type="url" id="linkedin" name="linkedin" required />
-      </div>
-      <div>
-        <label className="collapsible__content--style-text required" htmlFor="github"> Github</label>
-        <input className="js-input-github js-input-text collapsible__content--input-form" placeholder="Ej: @sally-hill" type="url" id="github" name="github" required />
-      </div>
+       <InputText
+        id="github"
+        labelText="Github"
+        inputName="github"
+        inputType= "github"
+        inputPlaceholder="Ej: @sally-hill"
+        handleInput={props.handleInput}
+      />
     </div>
   </fieldset>
 );
