@@ -2,13 +2,7 @@ import React from 'react';
 import '../stylesheets/Design.scss';
 
 const Design = () => (
-<fieldset class="collapsible collapsable--open">
-  <div class="js-collapsible--trigger collapsible__header--design">
-    <i class="far fa-object-ungroup collapsible__header--icon"></i>
-    <h2 class="collapsible__header--title">Diseña</h2>
-    <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i>
-  </div>
-  <div class="collapsible__content">
+  <div >
     <h3 class="collapsible__content--title">Colores</h3>
     <div class="collapsible__content--position">
       <label class="js-palette1 collapsible__content__palette" for="firstcolor">
@@ -31,7 +25,7 @@ const Design = () => (
       </label>
     </div>
   </div>
-</fieldset>
+
 );
 
 export default Design;
