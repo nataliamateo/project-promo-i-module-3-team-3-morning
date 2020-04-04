@@ -5,8 +5,8 @@ import Fill from "./Fill";
 import Share from "./Share";
 
 const Form = props => (
-  <form action="" method="POST" class="articles-container">
-    <div class="principal-column">
+  <form action="" method="POST" className="articles-container">
+    <div className="principal-column">
       {/* <Collapsable> */}
       <Design />
       {/* </Collapsable> */}

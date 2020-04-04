@@ -2,16 +2,16 @@ import React from 'react';
 import '../stylesheets/TwitterButton.scss';
 
 const TwitterButton = () => (
-<section class="share-container">
-  <div class="share-container__button collapsible__content">
-    <button class="share-container__button--styles" id="share_btn"><i class="share-container__button--icon-card far fa-address-card"></i> Crear tarjeta</button>
+<section className="share-container">
+  <div className="share-container__button collapsible__content">
+    <button className="share-container__button--styles" id="share_btn"><i className="share-container__button--icon-card far fa-address-card"></i> Crear tarjeta</button>
   </div>
-  <div class="errorMessage"></div>
-  <div class="share-container__twitter collapsible__content--twitter" id="share-div">
-    <div class="share__create-card">
-      <p class=" share-container__twitter__title">La tarjeta ha sido creada:</p>
+  <div className="errorMessage"></div>
+  <div className="share-container__twitter collapsible__content--twitter" id="share-div">
+    <div className="share__create-card">
+      <p className=" share-container__twitter__title">La tarjeta ha sido creada:</p>
     </div>
-    <a href="" target="_blank" class="share-container__twitter--link share-container__twitter__btn"><i class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir en twitter</a>
+    <a href="/" target="_blank" className="share-container__twitter--link share-container__twitter__btn"><i className="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir en twitter</a>
   </div>
 </section>
 

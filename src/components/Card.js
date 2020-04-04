@@ -20,10 +20,10 @@ const Card = () => (
               <a className="js-cardemail js-pastename" href="mailto:"><i className="far fa-envelope" title="Enviar email"></i></a>
             </li>
             <li className="js-card-linkedin img-creation__card--round">
-              <a className="js-cardlinkedin js-pastename" href alt="Linkedin"><i className="fab fa-linkedin-in" title="Ir al Linkedin"></i></a>
+              <a className="js-cardlinkedin js-pastename" href="/" alt="Linkedin"><i className="fab fa-linkedin-in" title="Ir al Linkedin"></i></a>
             </li>
             <li className="js-card-github img-creation__card--round">
-              <a className="js-cardgithub js-pastename" href=""><i className="fab fa-github-alt" title="Ir al Github"></i></a>
+              <a className="js-cardgithub js-pastename" href="/"><i className="fab fa-github-alt" title="Ir al Github"></i></a>
             </li>
           </ul>
         </article>
