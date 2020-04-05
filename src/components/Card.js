@@ -8,7 +8,7 @@ const Card = () => (
         <button className="js-reset img-creation__button"><i className="far fa-trash-alt"></i>Reset</button>
         <article className=" img-creation__card">
           <div className="js-border img-creation__card--container">
-            <h2 className="js-cardname js-pastename img-creation__card--name" value="">Nombre y Apellido</h2>
+            <h2 className="js-cardname js-pastename img-creation__card--name" value="">Nombre Apellido</h2>
             <h3 className="js-cardjob img-creation__card--profession" value="">FronEnd Developer</h3>
           </div>
           <div className="profile__image js__profile-image"></div>
@@ -20,10 +20,10 @@ const Card = () => (
               <a className="js-cardemail js-pastename" href="mailto:"><i className="far fa-envelope" title="Enviar email"></i></a>
             </li>
             <li className="js-card-linkedin img-creation__card--round">
-              <a className="js-cardlinkedin js-pastename" href alt="Linkedin"><i className="fab fa-linkedin-in" title="Ir al Linkedin"></i></a>
+              <a className="js-cardlinkedin js-pastename" href="/" alt="Linkedin"><i className="fab fa-linkedin-in" title="Ir al Linkedin"></i></a>
             </li>
             <li className="js-card-github img-creation__card--round">
-              <a className="js-cardgithub js-pastename" href=""><i className="fab fa-github-alt" title="Ir al Github"></i></a>
+              <a className="js-cardgithub js-pastename" href="/"><i className="fab fa-github-alt" title="Ir al Github"></i></a>
             </li>
           </ul>
         </article>

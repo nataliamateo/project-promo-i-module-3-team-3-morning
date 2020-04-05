@@ -11,17 +11,17 @@ const Design = () => (
         <div class="collapsible__content__palette--box bg-dirty-blue"></div>
         <div class="collapsible__content__palette--box bg-hospital-green"></div>
       </label>
-      <label class="js-palette2 collapsible__content__palette" for="secondcolor">
-        <input class="js-palette2 js-radio collapsible__content__palette--radio" id="secondcolor" type="radio" value="2" name="colors" />
-        <div class="collapsible__content__palette--box bg-dried-blood"></div>
-        <div class="collapsible__content__palette--box bg-rusty-red"></div>
-        <div class="collapsible__content__palette--box bg-tomato"></div>
+      <label className="js-palette2 collapsible__content__palette" htmlFor="secondcolor">
+        <input className="js-palette2 js-radio collapsible__content__palette--radio" id="secondcolor" type="radio" value="2" name="colors" />
+        <div className="collapsible__content__palette--box bg-dried-blood"></div>
+        <div className="collapsible__content__palette--box bg-rusty-red"></div>
+        <div className="collapsible__content__palette--box bg-tomato"></div>
       </label>
-      <label class="js-palette3 collapsible__content__palette" for="tertiarycolor">
-        <input class="js-palette3 js-radio collapsible__content__palette--radio" id="tertiarycolor" type="radio" value="3" name="colors" />
-        <div class="collapsible__content__palette--box bg-slate"></div>
-        <div class="collapsible__content__palette--box bg-faded-orange"></div>
-        <div class="collapsible__content__palette--box bg-light-grey-blue"></div>
+      <label className="js-palette3 collapsible__content__palette" htmlFor="tertiarycolor">
+        <input className="js-palette3 js-radio collapsible__content__palette--radio" id="tertiarycolor" type="radio" value="3" name="colors" />
+        <div className="collapsible__content__palette--box bg-slate"></div>
+        <div className="collapsible__content__palette--box bg-faded-orange"></div>
+        <div className="collapsible__content__palette--box bg-light-grey-blue"></div>
       </label>
     </div>
   </div>
