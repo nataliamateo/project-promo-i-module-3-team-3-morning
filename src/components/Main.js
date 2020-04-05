@@ -25,7 +25,7 @@ class Main extends React.Component {
 
   render() {
     const handleInput = (data) => {
-      console.log(data);
+      console.log("desde main", data);
     };
     return (
       <section className="cards-page">

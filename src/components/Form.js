@@ -8,7 +8,7 @@ const Form = props => (
   <form action="" method="POST" className="articles-container">
     <div className="principal-column">
       {/* <Collapsable> */}
-      <Design />
+      <Design handleInput={props.handleInput} />
       {/* </Collapsable> */}
       {/* <Collapsable> */}
       <Fill handleInput={props.handleInput} />
