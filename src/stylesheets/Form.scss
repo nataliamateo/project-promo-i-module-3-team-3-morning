@@ -16,25 +16,3 @@
   border-left: 0;
 }
 
-.collapsable--open .collapsible__content {
-  display: grid;
-}
-.collapsable--open .collapsible__header--arrow-icon {
-  transform: rotate(180deg);
-  padding-right: 144px;
-  @media all and (min-width: 768px) {
-    padding-right: 172px;
-  }
-}
-.collapsable--open .collapsible__header--arrow-icon--share {
-  padding-right: 132px;
-  font-size: 18px;
-  color: #54585a;
-  transform: rotate(180deg);
-  @media all and (min-width: 768px) {
-    padding-right: 172px;
-  }
-}
-.collapsable--open2 .collapsible__content2--twitter {
-  display: flex;
-}
