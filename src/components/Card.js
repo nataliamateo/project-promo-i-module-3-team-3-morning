@@ -9,7 +9,7 @@ const Card = () => (
         <article className=" img-creation__card">
           <div className="js-border img-creation__card--container">
             <h2 className="js-cardname js-pastename img-creation__card--name" value="">Nombre y Apellido</h2>
-            <h3 className="js-cardjob img-creation__card--profession" value="">Frontent developer</h3>
+            <h3 className="js-cardjob img-creation__card--profession" value="">FronEnd Developer</h3>
           </div>
           <div className="profile__image js__profile-image"></div>
           <ul className="img-creation__card--list">
