@@ -7,25 +7,33 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userData: {
+   
         palette: "",
         name: "",
         job: "",
-        mail: "",
+        email: "",
         phone: "",
         linkedin: "",
-        github: "",
-      },
+        github: ""
+      
     };
   }
 
   handleReset() {
     // limpiará todos los valores
   }
+ 
+  updateInputValue (data) {
+        this.setState({
+            name : "Maria José"
+          })
+    console.log(data)
+      }
 
   render() {
     const handleInput = (data) => {
-      console.log(data);
+      console.log(data.value);
+   
     };
     return (
       <section className="cards-page">
