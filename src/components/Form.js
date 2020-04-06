@@ -1,10 +1,10 @@
-import React from 'react';
-import '../stylesheets/Form.scss';
-import Design from './Design';
-import Fill from './Fill';
-import Share from './Share';
-import data from './CollapsableHeader';
-import Collapsable from './Collapsable';
+import React from "react";
+import "../stylesheets/Form.scss";
+import Design from "./Design";
+import Fill from "./Fill";
+import Share from "./Share";
+import data from "./CollapsableHeader";
+import Collapsable from "./Collapsable";
 
 class Form extends React.Component {
   // constructor(props) {
@@ -12,8 +12,8 @@ class Form extends React.Component {
   // }
   render() {
     return (
-      <form action='' method='POST' className='articles-container'>
-        <div className='principal-column'>
+      <form action="" method="POST" className="articles-container">
+        <div className="principal-column">
           <Collapsable
             nameTitle={data[0].name}
             icons={data[0].icon}
