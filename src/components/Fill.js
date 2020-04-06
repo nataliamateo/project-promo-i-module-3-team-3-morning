@@ -3,12 +3,7 @@ import InputText from './InputText';
 import '../stylesheets/Fill.scss';
 
 const Fill = (props) => (
-  <fieldset className="collapsible collapsable--open js-myform">
-    <div className="js-collapsible--trigger collapsible__header--fill">
-      <i className="far fa-keyboard collapsible__header--icon"></i>
-      <h2 className="collapsible__header__title">Rellena</h2>
-      <i className="fas fa-chevron-up collapsible__header--arrow-icon"></i>
-    </div>
+  
     <div className="collapsible__content">
       <InputText
         id="fullname"
@@ -25,21 +20,21 @@ const Fill = (props) => (
         handleInput={props.handleInput}
       />
        <InputText
-        id="phone"
-        labelText="Teléfono"
-        inputName="phone"
-        inputType= "tel"
-        inputPlaceholder="Ej: 555-55-55-55"
-        handleInput={props.handleInput}
-      />
+          id="phone"
+          labelText="Teléfono"
+          inputName="phone"
+          inputType= "tel"
+          inputPlaceholder="Ej: 555-55-55-55"
+          handleInput={props.handleInput}
+        />
         <InputText
-        id="email"
-        labelText="Email"
-        inputName="email"
-        inputType= "email"
-        inputPlaceholder="Ej: sally-hill@gmail.com"
-        handleInput={props.handleInput}
-      />
+          id="email"
+          labelText="Email"
+          inputName="email"
+          inputType= "email"
+          inputPlaceholder="Ej: sally-hill@gmail.com"
+          handleInput={props.handleInput}
+        />
         <InputText
         id="linkedin"
         labelText="Linkedin"
@@ -65,7 +60,6 @@ const Fill = (props) => (
         handleInput={props.handleInput}
       />
     </div>
-  </fieldset>
-);
+ );
 
 export default Fill;

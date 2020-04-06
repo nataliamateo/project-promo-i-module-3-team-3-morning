@@ -15,7 +15,7 @@ const InputText = (props) => {
       <label className="collapsible__content--style-text required" htmlFor={props.id}>{props.labelText}</label>
       <input 
         required
-        className="js-input-name js-input-text collapsible__content--input-form" 
+        className="collapsible__content--input-form" 
         type={props.inputType} 
         placeholder={props.inputPlaceholder} 
         id={props.id} 

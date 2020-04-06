@@ -1,12 +1,10 @@
 .collapsible {
     &__header {
-      &--design {
         padding-top: 27px;
         padding-bottom: 10px;
         display: grid;
         grid-template-columns: 0.5fr 1fr 2fr;
-      }
-      &--icon {
+         &--icon {
         color: #e17334;
         font-size: 18px;
         align-self: center;
@@ -26,8 +24,6 @@
     }
     &__content {
       margin-top: 22px;
-      margin-left: 20px;
-      display: none;
       &--title {
         font-family: 'Open Sans';
         font-size: 14px;
