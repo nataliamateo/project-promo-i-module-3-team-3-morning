@@ -7,13 +7,13 @@ import data from './CollapsableHeader';
 import Collapsable from './Collapsable';
 
 class Form extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
   render() {
     return (
-      <form action='' method='POST' class='articles-container'>
-        <div class='principal-column'>
+      <form action='' method='POST' className='articles-container'>
+        <div className='principal-column'>
           <Collapsable
             nameTitle={data[0].name}
             icons={data[0].icon}
