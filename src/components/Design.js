@@ -1,4 +1,5 @@
 import React from 'react';
+import InputRadio from './InputRadio';
 import '../stylesheets/Design.scss';
 
 const Design = () => (
