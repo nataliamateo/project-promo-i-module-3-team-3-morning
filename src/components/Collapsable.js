@@ -13,14 +13,16 @@ class Collapsable extends React.Component {
 
   handleClick() {
     this.setState((prevState) => {
-      let collapsableDisplay;
+      let collapsablesDisplay;
       if (prevState.collapsable === "hidden") {
-        collapsableDisplay = "open";
+        collapsablesDisplay = "open";
       } else {
-        collapsableDisplay = "hidden";
+        // const collapsables = collapsablesDisplay.map((collapsable) => {
+        collapsablesDisplay = "hidden";
       }
+      // collapsablesDisplay = "open";
       return {
-        collapsable: collapsableDisplay,
+        collapsable: collapsablesDisplay,
       };
     });
   }

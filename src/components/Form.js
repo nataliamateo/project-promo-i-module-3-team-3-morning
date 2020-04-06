@@ -20,7 +20,7 @@ class Form extends React.Component {
             //  por defecto decimos que es open, es decir verdadero
             open={true}
           >
-            <Design />
+            <Design handleInput={this.props.handleInput} />
           </Collapsable>
           <Collapsable nameTitle={data[1].name} icons={data[1].icon}>
             <Fill handleInput={this.props.handleInput} />
