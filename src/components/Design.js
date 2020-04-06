@@ -4,11 +4,6 @@ import '../stylesheets/Design.scss';
 
 const Design = (props) => (
   <fieldset className="collapsible collapsable--open">
-    {/* <div className="js-collapsible--trigger collapsible__header--design"> */}
-      {/* <i className="far fa-object-ungroup collapsible__header--icon"></i>
-      <h2 className="collapsible__header--title">Diseña</h2>
-      <i className="fas fa-chevron-up collapsible__header--arrow-icon"></i> */}
-    {/* </div> */}
     <div className="collapsible__content">
       <h3 className="collapsible__content--title">Colores</h3>
       <div className="collapsible__content--position">
