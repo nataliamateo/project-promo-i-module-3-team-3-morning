@@ -1,4 +1,5 @@
 import React from "react";
+import Icons from './Icons';
 import "../stylesheets/Card.scss";
 
 console.log();
@@ -20,7 +21,8 @@ const Card = (props) => (
             </h3>
           </div>
           <div className="profile__image js__profile-image"></div>
-          <ul className="img-creation__card--list">
+          <Icons></Icons>
+          {/* <ul className="img-creation__card--list">
             <li className="js-card-phone img-creation__card--round">
               <a className="js-cardphone js-pastename" href={"tel:" + props.phone}>
                 <i className="fas fa-mobile-alt" title="Teléfono"></i>
@@ -41,7 +43,7 @@ const Card = (props) => (
                 <i className="fab fa-github-alt" title="Ir al Github"></i>
               </a>
             </li>
-          </ul>
+          </ul> */}
         </article>
       </div>
     </div>
