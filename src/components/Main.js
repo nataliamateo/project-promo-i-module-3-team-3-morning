@@ -8,7 +8,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       palette: '1',
-      name: 'algo',
+      name: 'algo', //para comprobar que está controlado
       job: '',
       img: '',
       email: '',
