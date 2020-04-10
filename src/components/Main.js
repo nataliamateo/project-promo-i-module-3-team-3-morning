@@ -7,8 +7,8 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      palette: 1,
-      name: '',
+      palette: '1',
+      name: 'algo',
       job: '',
       img: '',
       email: '',
@@ -55,7 +55,7 @@ class Main extends React.Component {
     
     return (
       <section className='cards-page'>
-        <Form handleInput={this.handleInput} handleImage={this.handleImage} />
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github}/>
         <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
