@@ -33,7 +33,7 @@ class Main extends React.Component {
 
   handleInput(data) {
     this.setState({
-      palette: data.id === 'palette' ? data.value : this.state.palette,
+      palette: data.name === 'palette' ? data.value : this.state.palette,
       name: data.name === 'name' ? data.value : this.state.name,
       job: data.name === 'job' ? data.value : this.state.job,
       email: data.name === 'email' ? data.value : this.state.email,

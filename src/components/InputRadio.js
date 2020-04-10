@@ -9,9 +9,10 @@ class InputRadio extends React.Component {
 
   handleChange = (ev) => {
     const data = {
-      id: this.props.id,
+      name: 'palette',
       value: this.props.value,
     };
+
     console.log('me han seleccionado desde InputRadio', data);
     this.props.handleInput(data);
   };
@@ -20,15 +21,7 @@ class InputRadio extends React.Component {
     return (
       <div>
         <label className={this.props.classLabel} htmlFor={this.props.id}>
-          <input
-            className={this.props.classInput}
-            id={this.props.id}
-            type='radio'
-            value={this.props.value}
-            name='palette'
-            // checked={this.props.checked}
-            onChange={this.handleChange}
-          />
+          <input className={this.props.classInput} id={this.props.id} type='radio' value={this.props.value} name='palette' /*checked={this.props.checked}*/ onChange={this.handleChange} />
           <div className={this.props.colorA}></div>
           <div className={this.props.colorB}></div>
           <div className={this.props.colorC}></div>

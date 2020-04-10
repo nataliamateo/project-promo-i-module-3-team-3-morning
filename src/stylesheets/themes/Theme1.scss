@@ -1,0 +1,26 @@
+.card--palette1 {
+  &__container--background {
+    background-image: url(../images/05.jpg);
+  }
+
+  .img-creation__card {
+
+    &--container {
+      border-left: 4px solid #438792;
+    }
+
+    &--name {
+      color: #114e4e;
+    }
+
+    &--round {
+
+      border: solid 2px #a2deaf;
+    }
+
+    &--icon {
+      color: #420101;
+    }
+  }
+}
+}

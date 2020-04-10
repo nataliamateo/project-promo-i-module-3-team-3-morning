@@ -71,30 +71,7 @@
       line-height: 1.25;
     }
 
-    &--list {
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 62px 12px 20px;
 
-      & a {
-        padding: 10px;
-
-        &:active {
-          color: #438792;
-        }
-      }
-    }
-
-    &--round {
-      height: 32px;
-      width: 32px;
-      background: transparent;
-      border-radius: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   }
 }
 
@@ -172,7 +149,3 @@
   height: 250px;
   width: 240px;
 }
-
-// .profile {
-//   height: 0px;
-// }
