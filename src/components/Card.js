@@ -14,7 +14,7 @@ const Card = (props) => (
         <article className=' img-creation__card'>
           <div className='js-border img-creation__card--container'>
             <h2 className='js-cardname js-pastename img-creation__card--name' value=''>
-              {props.name || 'Nombre y Apellidos'}
+              {props.name || 'Nombre Apellidos'}
             </h2>
             <h3 className='js-cardjob img-creation__card--profession' value=''>
               {props.job || 'FrontEnd Developer'}
