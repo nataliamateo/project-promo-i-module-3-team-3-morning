@@ -1,5 +1,5 @@
 import React from 'react';
-import '../images/woman.png';
+import woman from '../images/woman.png';
 const fr = new FileReader();
 
 class InputFile extends React.Component {
@@ -10,7 +10,7 @@ class InputFile extends React.Component {
     this.writeImage = this.writeImage.bind(this);
     this.inputFile = React.createRef();
     this.state = {
-      img: '(../images/woman.png)',
+      img: woman,
     };
   }
   handleClickFake(ev) {
@@ -43,7 +43,7 @@ class InputFile extends React.Component {
         </div>
         <div className='profile'>
           <div className='js__profile-preview collapsible__content--container-button--image-box'>
-            <img src={this.state.img || '../images/woman.png'} alt='Imagen' className='profile__preview' />
+            <img src={this.state.img} alt='Imagen' className='profile__preview' />
           </div>
         </div>
       </>
