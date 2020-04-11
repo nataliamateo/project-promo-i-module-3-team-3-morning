@@ -8,7 +8,7 @@ class Main extends React.Component {
     super(props);
     this.state = {
       palette: '1',
-      name: 'algo', //para comprobar que está controlado
+      name: '',
       job: '',
       img: '',
       email: '',
@@ -24,16 +24,9 @@ class Main extends React.Component {
     // limpiará todos los valores
   }
 
-  updateInputValue(data) {
-    this.setState({
-      name: 'Maria José',
-    });
-    console.log(data);
-  }
-
   handleInput(data) {
     console.log(data);
-    
+
     this.setState({
       palette: data.name === 'palette' ? data.value : this.state.palette,
       name: data.name === 'name' ? data.value : this.state.name,
@@ -51,11 +44,9 @@ class Main extends React.Component {
   }
 
   render() {
-    console.log(this.state);
-    
     return (
       <section className='cards-page'>
-        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github}/>
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} />
         <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
