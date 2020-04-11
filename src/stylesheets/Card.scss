@@ -36,7 +36,7 @@
     border-radius: 15px;
     border: 1px solid white;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     color: #000000;
     cursor: pointer;
     align-self: flex-start;
@@ -52,11 +52,10 @@
     &--container {
       padding: 0px 0px 0px 20px;
       margin-bottom: 10px;
-
     }
 
     &--name {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 18px;
       font-weight: bold;
       line-height: 1.11;
@@ -66,7 +65,7 @@
 
     &--profession {
       color: #54585a;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 16px;
       line-height: 1.25;
     }
@@ -173,6 +172,6 @@
   width: 240px;
 }
 
-// .profile {
-//   height: 0px;
-// }
+.profile {
+  height: 0px;
+}
