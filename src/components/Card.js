@@ -17,10 +17,10 @@ function Card(props) {
           <article className=" img-creation__card">
             <div className="js-border img-creation__card--container">
               <h2 className="js-cardname js-pastename img-creation__card--name" value="">
-                {props.name || "Nombre y Apellidos"}
+                {props.name || Card.defaultProps.name}
               </h2>
               <h3 className="js-cardjob img-creation__card--profession" value="">
-                {props.job || "FrontEnd Developer"}
+                {props.job || Card.defaultProps.job}
               </h3>
             </div>
             <div className="profile__image js__profile-image"></div>
@@ -31,6 +31,11 @@ function Card(props) {
     </section>
   );
 }
+Card.defaultProps = {
+  name: "Nombre y Apellidos",
+  job: "FrontEnd Developer",
+}
+
 Card.propTypes = {
   name: PropTypes.string,
   job: PropTypes.string,
@@ -39,8 +44,6 @@ Card.propTypes = {
   linkedin: PropTypes.string,
   github: PropTypes.string,
 }
-
-
 
 
 export default Card;
