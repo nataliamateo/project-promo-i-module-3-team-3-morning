@@ -2,7 +2,6 @@
 import React from 'react';
 import InputText from './InputText';
 import '../stylesheets/Fill.scss';
-import InputFile from './InputFile';
 
 const Fill = (props) => (
   <div className="collapsible__content">
