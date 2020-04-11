@@ -1,19 +1,19 @@
-import React from "react";
-import "../stylesheets/Main.scss";
-import Form from "./Form";
-import Card from "./Card";
+import React from 'react';
+import '../stylesheets/Main.scss';
+import Form from './Form';
+import Card from './Card';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       palette: 1,
-      name: "",
-      job: "",
-      email: "",
-      phone: "",
-      linkedin: "",
-      github: "",
+      name: '',
+      job: '',
+      email: '',
+      phone: '',
+      linkedin: '',
+      github: '',
     };
     this.handleInput = this.handleInput.bind(this);
   }
@@ -24,20 +24,20 @@ class Main extends React.Component {
 
   updateInputValue(data) {
     this.setState({
-      name: "Maria José",
+      name: 'Maria José',
     });
     console.log(data);
   }
 
   handleInput(data) {
     this.setState({
-      palette: data.id === "palette" ? data.value : this.state.palette,
-      name: data.name === "name" ? data.value : this.state.name,
-      job: data.name === "job" ? data.value : this.state.job,
-      email: data.name === "email" ? data.value : this.state.email,
-      phone: data.name === "phone" ? data.value : this.state.phone,
-      linkedin: data.name === "linkedin" ? data.value : this.state.linkedin,
-      github: data.name === "github" ? data.value : this.state.github,
+      palette: data.id === 'palette' ? data.value : this.state.palette,
+      name: data.name === 'name' ? data.value : this.state.name,
+      job: data.name === 'job' ? data.value : this.state.job,
+      email: data.name === 'email' ? data.value : this.state.email,
+      phone: data.name === 'phone' ? data.value : this.state.phone,
+      linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
+      github: data.name === 'github' ? data.value : this.state.github,
     });
   }
 
