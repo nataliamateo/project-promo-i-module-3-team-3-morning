@@ -36,9 +36,8 @@
     border-radius: 15px;
     border: 1px solid white;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     color: #000000;
-    cursor: pointer;
     align-self: flex-start;
   }
 
@@ -52,11 +51,11 @@
     &--container {
       padding: 0px 0px 0px 20px;
       margin-bottom: 10px;
-
+      border-left: 5px solid #438792;
     }
 
     &--name {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 18px;
       font-weight: bold;
       line-height: 1.11;
@@ -66,79 +65,26 @@
 
     &--profession {
       color: #54585a;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 16px;
       line-height: 1.25;
     }
 
+    &--list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 62px 12px 20px;
 
-  }
-}
+      &--icon {
+        padding: 10px;
+        color: #438792;
 
-.far.fa-trash-alt {
-  margin-right: 8px;
-}
-
-.js-card-palette1 {
-  .js-background {
-    background-image: url(../images/01.jpg);
-  }
-
-  .js-pastename {
-    color: #114e4e;
-  }
-
-  .js-border {
-    border-left: 5px solid #438792;
-  }
-
-  .js-card-phone,
-  .js-card-email,
-  .js-card-linkedin,
-  .js-card-github {
-    border: 2px solid #a2deaf;
-  }
-}
-
-.js-card-palette2 {
-  .js-background {
-    background-image: url(../images/04.jpg);
-  }
-
-  .js-pastename {
-    color: #420101;
-  }
-
-  .js-border {
-    border-left: 5px solid #bd1010;
-  }
-
-  .js-card-phone,
-  .js-card-email,
-  .js-card-linkedin,
-  .js-card-github {
-    border: 2px solid #e95626;
-  }
-}
-
-.js-card-palette3 {
-  .js-background {
-    background-image: url(../images/05.jpg);
-  }
-
-  .js-pastename {
-    color: #3e5b65;
-  }
-
-  .js-border {
-    border-left: 5px solid #eab052;
-  }
-
-  .js-card-phone,
-  .js-card-email,
-  .js-card-linkedin,
-  .js-card-github {
-    border: 2px solid #a0c0cf;
+        &:active {
+          color: #438792;
+        }
+      }
+    }
   }
 }
 
@@ -148,4 +94,8 @@
   background-size: cover;
   height: 250px;
   width: 240px;
+}
+
+.profile {
+  height: 0px;
 }
