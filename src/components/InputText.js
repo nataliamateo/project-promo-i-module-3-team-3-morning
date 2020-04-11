@@ -8,7 +8,7 @@ const InputText = (props) => {
     };
     props.handleInput(data);
   };
-
+  console.log(props);
   return (
     <div>
       <label className="collapsible__content--style-text required" htmlFor={props.id}>

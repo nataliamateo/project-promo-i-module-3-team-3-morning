@@ -18,8 +18,7 @@ class Form extends React.Component {
             nameTitle={data[0].name}
             icons={data[0].icon}
             //  por defecto decimos que es open, es decir verdadero
-            open={true}
-          >
+            open={true}>
             <Design handleInput={this.props.handleInput} />
           </Collapsable>
           <Collapsable nameTitle={data[1].name} icons={data[1].icon}>
