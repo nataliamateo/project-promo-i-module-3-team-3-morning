@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Icons from './Icons';
 import "../stylesheets/Card.scss";
 import PropTypes from 'prop-types';
