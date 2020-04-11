@@ -7,30 +7,49 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+<<<<<<< HEAD
       palette: 1,
       name: '',
       job: '',
+=======
+      palette: '1',
+      name: '',
+      job: '',
+      img: '',
+>>>>>>> card
       email: '',
       phone: '',
       linkedin: '',
       github: '',
     };
     this.handleInput = this.handleInput.bind(this);
+    this.handleImage = this.handleImage.bind(this);
   }
 
   handleReset() {
     // limpiará todos los valores
   }
 
-  updateInputValue(data) {
-    this.setState({
-      name: 'Maria José',
-    });
-    console.log(data);
-  }
-
   handleInput(data) {
+    console.log(data);
+
     this.setState({
+<<<<<<< HEAD
+      name: 'Maria José',
+=======
+      palette: data.name === 'palette' ? data.value : this.state.palette,
+      name: data.name === 'name' ? data.value : this.state.name,
+      job: data.name === 'job' ? data.value : this.state.job,
+      email: data.name === 'email' ? data.value : this.state.email,
+      phone: data.name === 'phone' ? data.value : this.state.phone,
+      linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
+      github: data.name === 'github' ? data.value : this.state.github,
+>>>>>>> card
+    });
+  }
+  handleImage(img) {
+    this.setState({
+<<<<<<< HEAD
       palette: data.id === 'palette' ? data.value : this.state.palette,
       name: data.name === 'name' ? data.value : this.state.name,
       job: data.name === 'job' ? data.value : this.state.job,
@@ -38,14 +57,17 @@ class Main extends React.Component {
       phone: data.name === 'phone' ? data.value : this.state.phone,
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
+=======
+      img: img,
+>>>>>>> card
     });
   }
 
   render() {
     return (
-      <section className="cards-page">
-        <Form handleInput={this.handleInput} />
-        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+      <section className='cards-page'>
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} />
+        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
   }
