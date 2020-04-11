@@ -10,17 +10,17 @@ const Icons = (props) => (
       </a>
     </li>
     <li className={` img-creation__card--round list--palette-${props.palette}`}>
-      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={'mailto:' + props.email}>
+      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={'mailto:' + props.email} target="_blank" rel="noopener noreferrer">
         <i className="far fa-envelope" title="Enviar email"></i>
       </a>
     </li>
     <li className={` img-creation__card--round list--palette-${props.palette}`}>
-      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={props.linkedin} alt="Linkedin" target="_blank">
+      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={props.linkedin} alt="Linkedin" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-linkedin-in" title="Ir al Linkedin"></i>
       </a>
     </li>
     <li className={` img-creation__card--round list--palette-${props.palette}`}>
-      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={props.github}>
+      <a className={`img-creation__card--list--icon icon--palette-${props.palette}`} href={props.github} target="_blank" rel="noopener noreferrer">
         <i className="fab fa-github-alt" title="Ir al Github"></i>
       </a>
     </li>
