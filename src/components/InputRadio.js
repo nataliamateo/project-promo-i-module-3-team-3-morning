@@ -11,7 +11,6 @@ class InputRadio extends React.Component {
   handleChange = (ev) => {
     const data = {
       name: this.props.name,
-      id: this.props.id,
       value: ev.target.value,
     };
     console.log('me han seleccionado desde InputRadio', data);
