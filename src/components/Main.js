@@ -1,5 +1,6 @@
 import React from 'react';
 import '../stylesheets/Main.scss';
+
 import Form from './Form';
 import Card from './Card';
 
@@ -24,7 +25,7 @@ class Main extends React.Component {
 
   updateInputValue(data) {
     this.setState({
-      name: 'Maria José',
+      name: '',
     });
     console.log(data);
   }
@@ -45,7 +46,7 @@ class Main extends React.Component {
     return (
       <section className="cards-page">
         <Form handleInput={this.handleInput} />
-        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} email={this.state.email} phone={parseInt(this.state.phone)} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
   }

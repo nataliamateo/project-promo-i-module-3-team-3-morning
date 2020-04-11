@@ -15,15 +15,15 @@ class Form extends React.Component {
   }
   render() {
     return (
-      <form action='' method='POST' className='articles-container'>
-        <div className='principal-column'>
+      <form action="" method="POST" className="articles-container">
+        <div className="principal-column">
           <Collapsable
             nameTitle={data[0].name}
             icons={data[0].icon}
             //  por defecto decimos que es open, es decir verdadero
             open={true}
           >
-            <Design handleInput={this.props.handleInput} palette={this.props.palette} />
+            <Design handleInput={this.props.handleInput} />
           </Collapsable>
           <Collapsable nameTitle={data[1].name} icons={data[1].icon}>
             <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} name={this.props.name} job={this.props.job} img={this.props.img} email={this.props.email} phone={this.props.phone} linkedin={this.props.linkedin} github={this.props.github} />
