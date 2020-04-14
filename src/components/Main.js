@@ -2,31 +2,41 @@ import React from 'react';
 import '../stylesheets/Main.scss';
 import Form from './Form';
 import Card from './Card';
+import localStorage from '../localstorage/localStorage';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+    const localStorageData = localStorage.get('user', {
       palette: '1',
       name: '',
       job: '',
-      img: '',
+      photo: '',
       email: '',
       phone: '',
       linkedin: '',
       github: '',
-    };
+    });
+    this.state = localStorageData;
     this.handleInput = this.handleInput.bind(this);
     this.handleImage = this.handleImage.bind(this);
+    this.handleReset = this.handleReset.bind(this);
   }
 
   handleReset() {
-    // limpiará todos los valores
+    this.setState({
+      palette: '1',
+      name: '',
+      job: '',
+      photo: '',
+      email: '',
+      phone: '',
+      linkedin: '',
+      github: '',
+    });
   }
 
   handleInput(data) {
-    console.log(data);
-
     this.setState({
       palette: data.name === 'palette' ? data.value : this.state.palette,
       name: data.name === 'name' ? data.value : this.state.name,
@@ -37,17 +47,21 @@ class Main extends React.Component {
       github: data.name === 'github' ? data.value : this.state.github,
     });
   }
+
   handleImage(img) {
     this.setState({
-      img: img,
+      photo: img,
     });
   }
-
+  componentDidUpdate() {
+    const {name, job, photo, email, github, linkedin, phone, palette} = this.state;
+    localStorage.set('user', {name, job, photo, email, github, linkedin, phone, palette});
+  }
   render() {
     return (
       <section className='cards-page'>
-        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} />
-        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={parseInt(this.state.phone)} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
   }

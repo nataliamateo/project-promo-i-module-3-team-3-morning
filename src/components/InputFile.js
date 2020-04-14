@@ -10,7 +10,7 @@ class InputFile extends React.Component {
     this.writeImage = this.writeImage.bind(this);
     this.inputFile = React.createRef();
     this.state = {
-      img: woman,
+      photo: woman,
     };
   }
   handleClickFake(ev) {
@@ -24,7 +24,7 @@ class InputFile extends React.Component {
   }
   writeImage() {
     this.setState({
-      img: fr.result,
+      photo: fr.result,
     });
     this.props.handleImage(fr.result);
   }
@@ -43,7 +43,7 @@ class InputFile extends React.Component {
         </div>
         <div className='profile'>
           <div className='js__profile-preview collapsible__content--container-button--image-box'>
-            <img src={this.state.img} alt='Imagen' className='profile__preview' />
+            <img src={this.state.photo} alt='Imagen' className='profile__preview' />
           </div>
         </div>
       </>

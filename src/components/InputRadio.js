@@ -13,8 +13,6 @@ class InputRadio extends React.Component {
       name: this.props.name,
       value: ev.target.value,
     };
-
-    console.log('me han seleccionado desde InputRadio', data);
     this.props.handleInput(data);
   };
 
