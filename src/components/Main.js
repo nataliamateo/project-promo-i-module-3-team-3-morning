@@ -1,10 +1,10 @@
 import React from 'react';
 import '../stylesheets/Main.scss';
+
 import Form from './Form';
 import Card from './Card';
 
 class Main extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -21,14 +21,11 @@ class Main extends React.Component {
     this.handleImage = this.handleImage.bind(this);
   }
 
-
   handleReset() {
     // limpiará todos los valores
   }
 
   handleInput(data) {
-    console.log(data);
-
     this.setState({
       palette: data.name === 'palette' ? data.value : this.state.palette,
       name: data.name === 'name' ? data.value : this.state.name,
@@ -38,7 +35,9 @@ class Main extends React.Component {
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
     });
+    console.log(data);
   }
+
   handleImage(img) {
     this.setState({
       img: img,
@@ -51,14 +50,8 @@ class Main extends React.Component {
         <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} />
         <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
-
-
     );
   }
 }
-
-
-
-
 
 export default Main;
