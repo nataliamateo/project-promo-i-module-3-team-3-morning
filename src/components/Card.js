@@ -5,20 +5,20 @@ import PropTypes from 'prop-types';
 import woman from '../images/woman.png';
 
 const Card = (props) => {
-
+  console.log(props);
   function handleReset(ev) {
     ev.preventDefault();
     //es el nombre de la madre
-    props.handleReset(ev.currentTarget)
+    props.handleReset(ev.currentTarget);
   }
 
   return (
-    < section className='img-creation' >
+    <section className='img-creation'>
       <div className={`img-creation__container background background--palette-${props.palette}`}>
         <div className='img-creation__container--card'>
           <button onClick={handleReset} className='js-reset img-creation__button'>
             <i className='far fa-trash-alt'></i>Reset
-        </button>
+          </button>
           <article className='img-creation__card'>
             <div className={`img-creation__card--container container--palette-${props.palette} `}>
               <h2 className={`img-creation__card--name name--palette-${props.palette} `} value=''>
@@ -31,14 +31,13 @@ const Card = (props) => {
             <div className='profile__image js__profile-image'>
               <img src={props.img || Card.defaultProps.img} alt='' className='profile__image' />
             </div>
-            <Icons palette={props.palette} phone={props.phone} email={props.email} linkedin={props.linkedin} github={props.github} />
+            <Icons palette={props.palette} phone={parseInt(props.phone)} email={props.email} linkedin={props.linkedin} github={props.github} />
           </article>
         </div>
       </div>
-    </section >
-  )
+    </section>
+  );
 };
-
 
 Card.defaultProps = {
   name: 'Nombre Apellidos',

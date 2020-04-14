@@ -1,6 +1,5 @@
 import React from 'react';
 import '../stylesheets/Main.scss';
-
 import Form from './Form';
 import Card from './Card';
 
@@ -23,7 +22,6 @@ class Main extends React.Component {
   }
 
   handleReset() {
-
     this.setState({
       palette: '1',
       name: '',
@@ -34,7 +32,6 @@ class Main extends React.Component {
       linkedin: '',
       github: '',
     });
-
   }
 
   handleInput(data) {
