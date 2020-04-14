@@ -29,7 +29,7 @@ const Card = (props) => {
               </h3>
             </div>
             <div className='profile__image js__profile-image'>
-              <img src={props.img || Card.defaultProps.img} alt='' className='profile__image' />
+              <img src={props.photo || Card.defaultProps.photo} alt='' className='profile__image' />
             </div>
             <Icons palette={props.palette} phone={parseInt(props.phone)} email={props.email} linkedin={props.linkedin} github={props.github} />
           </article>
@@ -42,7 +42,7 @@ const Card = (props) => {
 Card.defaultProps = {
   name: 'Nombre Apellidos',
   job: 'FrontEnd Developer',
-  img: woman,
+  photo: woman,
 };
 
 Card.propTypes = {
