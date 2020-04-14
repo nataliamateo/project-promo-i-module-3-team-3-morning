@@ -3,6 +3,7 @@ import '../stylesheets/Main.scss';
 import Form from './Form';
 import Card from './Card';
 import localStorage from '../localstorage/localStorage';
+import woman from '../images/woman.png';
 
 class Main extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class Main extends React.Component {
       palette: '1',
       name: '',
       job: '',
-      photo: '',
+      photo: woman,
       email: '',
       phone: '',
       linkedin: '',

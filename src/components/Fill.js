@@ -11,7 +11,7 @@ const Fill = (props) => {
     <div className='collapsible__content'>
       <InputText id='fullname' labelText='Nombre completo' inputName='name' inputType='text' value={props.name} inputPlaceholder='Ej: Sally Jill' handleInput={props.handleInput} />
       <InputText id='job' labelText='Puesto' inputName='job' inputType='text' value={props.job} inputPlaceholder='Ej: Front-end' handleInput={props.handleInput} />
-      <InputFile handleImage={props.handleImage} />
+      <InputFile handleImage={props.handleImage} photo={props.photo} />
       <InputText id='phone' labelText='Teléfono' inputName='phone' inputType='tel' value={props.phone} inputPlaceholder='Ej: 555-55-55-55' handleInput={props.handleInput} />
       <InputText id='email' labelText='Email' inputName='email' inputType='email' value={props.email} inputPlaceholder='Ej: sally-hill@gmail.com' handleInput={props.handleInput} />
       <InputText id='linkedin' labelText='Linkedin' inputName='linkedin' inputType='url' value={props.linkedin} inputPlaceholder='Ej: linkedin.com/in/sally.hill' handleInput={props.handleInput} />

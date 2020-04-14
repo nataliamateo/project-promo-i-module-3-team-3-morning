@@ -43,7 +43,7 @@ class InputFile extends React.Component {
         </div>
         <div className='profile'>
           <div className='js__profile-preview collapsible__content--container-button--image-box'>
-            <img src={this.state.photo} alt='Imagen' className='profile__preview' />
+            <img src={this.props.photo} alt='Imagen' className='profile__preview' />
           </div>
         </div>
       </>
