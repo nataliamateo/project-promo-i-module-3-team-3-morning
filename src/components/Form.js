@@ -13,6 +13,7 @@ class Form extends React.Component {
       collapsableOpenId: data[0].id,
     };
   }
+
   render() {
     return (
       <form action="" method="POST" className="articles-container">
