@@ -17,10 +17,8 @@ class Collapsable extends React.Component {
       if (prevState.collapsable === "hidden") {
         collapsablesDisplay = "open";
       } else {
-        // const collapsables = collapsablesDisplay.map((collapsable) => {
         collapsablesDisplay = "hidden";
       }
-      // collapsablesDisplay = "open";
       return {
         collapsable: collapsablesDisplay,
       };

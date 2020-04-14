@@ -1,5 +1,6 @@
 import React from 'react';
 import '../stylesheets/Design.scss';
+import ColorRadio from './ColorRadio';
 
 class InputRadio extends React.Component {
   constructor(props) {
@@ -7,31 +8,21 @@ class InputRadio extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange = ev => {
+  handleChange = (ev) => {
     const data = {
-      id: this.props.id,
-      value: this.props.value
+      name: this.props.name,
+      value: ev.target.value,
     };
-    console.log("me han seleccionado desde InputRadio", data);
+    console.log('me han seleccionado desde InputRadio', data);
     this.props.handleInput(data);
-  }
+  };
 
-  render() {  
+  render() {
     return (
       <div>
-        <label 
-        className= {this.props.classLabel}  
-        htmlFor={this.props.id}>
-          <input className= {this.props.classInput} 
-          id={this.props.id} 
-          type="radio" 
-          value={this.props.value} 
-          name="palette"
-          // checked={this.props.checked}
-          onChange={this.handleChange} />
-          <div className={this.props.colorA}></div>
-          <div className={this.props.colorB}></div>
-          <div className={this.props.colorC}></div>
+        <label className={this.props.classLabel} htmlFor={this.props.id}>
+          <input className={this.props.classInput} id={this.props.id} type='radio' value={this.props.value} name={this.props.name} checked={this.props.checked} onChange={this.handleChange} />
+          <ColorRadio colorA={this.props.colorA} colorB={this.props.colorB} colorC={this.props.colorC} />
         </label>
       </div>
     );

@@ -1,103 +1,116 @@
 .collapsible {
-    &__header {
-      &--fill {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 2fr;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      &--icon {
-        color: #e17334;
-        font-size: 18px;
-        width: 16px;
-        height: 18px;
-      }
-      &--title {
-        font-family: "Open Sans";
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #54585a;
-      }
-      &--arrow-icon {
-        color: #54585a;
-        font-size: 18px;
-        text-align: end;
-        align-self: center;
-      }
-    }
-  }
-  
-  .collapsible__content {
-        &--style-text {
-      font-family: "Open Sans";
-      font-size: 14px;
-      color: #114e4e;
-      line-height: 1.43;
-      &--button {
-        width: 140px;
-        height: 30px;
-        border-radius: 3px;
-        background-color: #e17334;
-        color: #ffffff;
-        font-family: "Open Sans";
-        border: 0;
-        margin-bottom: 20px;
-        position: relative;
-      }
-    }
-    &--input-form {
-      width: 100%;
-      height: 30px;
-      margin-top: 7px;
-      margin-bottom: 20px;
-      border: 1px solid #a2deaf;
-      padding-left: 9px;
-    }
-    &--container-button {
-      display: flex;
+  &__header {
+    &--fill {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 2fr;
       padding-top: 10px;
-      &--image-box {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        border: solid 1px #a2deaf;
-        margin-left: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        bottom: 50px;
-        right: -140px;
-      }
+      padding-bottom: 10px;
+    }
+
+    &--icon {
+      color: #e17334;
+      font-size: 18px;
+      width: 16px;
+      height: 18px;
+    }
+
+    &--title {
+      font-family: "Open Sans";
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #54585a;
+    }
+
+    &--arrow-icon {
+      color: #54585a;
+      font-size: 18px;
+      text-align: end;
+      align-self: center;
     }
   }
-  
-  .collapsible__content--style-text.required::after {
-    color: #e17334;
-    content: "*";
-    display: inline;
-    font-weight: bold;
-  }
-  
- 
-  
-  .action {
-    text-align: center;
-  }
-  .action__upload-btn {
-    box-shadow: 0 0 5px rgba(#000, 0.3);
-    box-sizing: border-box;
+}
+
+.collapsible__content {
+  &--style-text {
     font-family: "Open Sans";
     font-size: 14px;
+    color: #114e4e;
+    line-height: 1.43;
+
+    &--button {
+      width: 140px;
+      height: 30px;
+      border-radius: 3px;
+      background-color: #e17334;
+      color: #ffffff;
+      font-family: "Open Sans";
+      border: 0;
+      margin-bottom: 20px;
+      position: relative;
+    }
   }
-  .action__hiddenField {
-    display: none;
-    position: relative;
-    left: -140px;
+
+  &--input-form {
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #a2deaf;
+    padding-left: 9px;
   }
-  
-  .profile__preview {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  &--container-button {
+    display: flex;
+    padding-top: 10px;
+
+    &--image-box {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: solid 1px #a2deaf;
+      margin-left: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      bottom: 50px;
+      right: -140px;
+    }
   }
+}
+
+
+
+.collapsible__content--style-text.required::after {
+  color: #e17334;
+  content: "*";
+  display: inline;
+  font-weight: bold;
+}
+
+
+
+.action {
+  text-align: center;
+}
+
+.action__upload-btn {
+  box-shadow: 0 0 5px rgba(#000, 0.3);
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.action__hiddenField {
+  display: none;
+  position: relative;
+  left: -140px;
+}
+
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
