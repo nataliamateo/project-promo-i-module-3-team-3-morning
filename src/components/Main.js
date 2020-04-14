@@ -35,7 +35,7 @@ class Main extends React.Component {
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
     });
-    console.log(data);
+
   }
 
   handleImage(img) {
@@ -48,7 +48,7 @@ class Main extends React.Component {
     return (
       <section className='cards-page'>
         <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} />
-        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} img={this.state.img} email={this.state.email} phone={parseInt(this.state.phone)} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
   }

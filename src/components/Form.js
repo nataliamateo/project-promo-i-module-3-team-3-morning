@@ -26,7 +26,7 @@ class Form extends React.Component {
             <Design handleInput={this.props.handleInput} palette={this.props.palette} />
           </Collapsable>
           <Collapsable nameTitle={data[1].name} icons={data[1].icon}>
-            <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} name={this.props.name} job={this.props.job} img={this.props.img} email={this.props.email} phone={this.props.phone} linkedin={this.props.linkedin} github={this.props.github} />
+            <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} name={this.props.name} job={this.props.job} img={this.props.img} email={this.props.email} phone={parseInt(this.props.phone)} linkedin={this.props.linkedin} github={this.props.github} />
           </Collapsable>
           <Collapsable nameTitle={data[2].name} icons={data[2].icon}>
             <Share />
