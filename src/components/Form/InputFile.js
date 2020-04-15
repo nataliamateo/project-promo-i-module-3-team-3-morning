@@ -1,5 +1,5 @@
 import React from 'react';
-import woman from '../images/woman.png';
+import woman from '../../images/woman.png';
 const fr = new FileReader();
 
 class InputFile extends React.Component {
@@ -36,13 +36,13 @@ class InputFile extends React.Component {
           Imagen de perfil
         </label>
         <div className=' action collapsible__content--container-button'>
-          <button className='action__upload-btn js__profile-trigger collapsible__content--style-text--button' type='button' onClick={this.handleClickFake}>
+          <button className='action__upload-btn collapsible__content--style-text--button' type='button' onClick={this.handleClickFake}>
             Añadir imagen
           </button>
-          <input type='file' name='' id='img-selector' className='action__hiddenField js__profile-upload-btn' ref={this.inputFile} onChange={this.handleFile} />
+          <input type='file' name='' id='img-selector' className='action__hiddenField' ref={this.inputFile} onChange={this.handleFile} />
         </div>
         <div className='profile'>
-          <div className='js__profile-preview collapsible__content--container-button--image-box'>
+          <div className='collapsible__content--container-button--image-box'>
             <img src={this.props.photo} alt='Imagen' className='profile__preview' />
           </div>
         </div>
