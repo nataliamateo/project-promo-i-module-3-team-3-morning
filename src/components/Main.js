@@ -55,9 +55,10 @@ class Main extends React.Component {
     });
   }
   componentDidUpdate() {
-    const { name, job, photo, email, github, linkedin, phone, palette } = this.state;
-    localStorage.set('user', { name, job, photo, email, github, linkedin, phone, palette });
+    const {name, job, photo, email, github, linkedin, phone, palette} = this.state;
+    localStorage.set('user', {name, job, photo, email, github, linkedin, phone, palette});
   }
+
   render() {
     return (
       <section className='cards-page'>
