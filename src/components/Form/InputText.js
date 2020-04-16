@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const InputText = (props) => {
   const handleKeyUp = (ev) => {
@@ -14,9 +15,13 @@ const InputText = (props) => {
       <label className='collapsible__content--style-text required' htmlFor={props.id}>
         {props.labelText}
       </label>
-      <input required className='collapsible__content--input-form' type={props.inputType} value={props.value} placeholder={props.inputPlaceholder} id={props.id} name={props.inputName} onChange={handleKeyUp} />
+      <input className='collapsible__content--input-form' type={props.inputType} value={props.value} placeholder={props.inputPlaceholder} id={props.id} name={props.inputName} onChange={handleKeyUp} />
     </div>
   );
+};
+
+InputText.propTypes = {
+  input: PropTypes.isRequired,
 };
 
 export default InputText;

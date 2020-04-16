@@ -15,8 +15,6 @@ class Form extends React.Component {
   }
 
   render() {
-    console.log(this.props);
-
     return (
       <form action='' method='POST' className='articles-container'>
         <div className='principal-column'>
