@@ -27,6 +27,7 @@ class InputFile extends React.Component {
       photo: fr.result,
     });
     this.props.handleImage(fr.result);
+    this.inputFile.current.value = '';
   }
 
   render() {
