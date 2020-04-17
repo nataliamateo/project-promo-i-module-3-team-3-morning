@@ -21,7 +21,7 @@ const InputText = (props) => {
 };
 
 InputText.propTypes = {
-  input: PropTypes.isRequired,
+  inputType: PropTypes.string.isRequired,
 };
 
 export default InputText;
