@@ -31,7 +31,7 @@ const Card = (props) => {
             <div className='profile__image'>
               <img src={props.photo || Card.defaultProps.photo} alt={props.name} className='profile__image' />
             </div>
-            <Icons palette={props.palette} phone={parseInt(props.phone)} email={props.email} linkedin={props.linkedin} github={props.github} />
+            <Icons palette={props.palette} phone={props.phone} email={props.email} linkedin={props.linkedin} github={props.github} />
           </article>
         </div>
       </div>
@@ -49,7 +49,7 @@ Card.propTypes = {
   name: PropTypes.string,
   job: PropTypes.string,
   email: PropTypes.string,
-  phone: PropTypes.number,
+  phone: PropTypes.string,
   linkedin: PropTypes.string,
   github: PropTypes.string,
 };

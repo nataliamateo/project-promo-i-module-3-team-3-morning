@@ -15,13 +15,13 @@ const InputText = (props) => {
       <label className='collapsible__content--style-text required' htmlFor={props.id}>
         {props.labelText}
       </label>
-      <input className='collapsible__content--input-form' type={props.inputType} value={props.value} placeholder={props.inputPlaceholder} id={props.id} name={props.inputName} onChange={handleKeyUp} />
+      <input className='collapsible__content--input-form' type={props.inputType} value={props.value} required placeholder={props.inputPlaceholder} id={props.id} name={props.inputName} onChange={handleKeyUp} />
     </div>
   );
 };
 
 InputText.propTypes = {
-  input: PropTypes.isRequired,
+  inputType: PropTypes.string.isRequired,
 };
 
 export default InputText;

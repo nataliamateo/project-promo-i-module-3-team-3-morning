@@ -4,6 +4,7 @@ import Form from './Form/Form';
 import Card from './Card/Card';
 import localStorage from '../localstorage/localStorage';
 import woman from '../images/woman.png';
+// import {createCardFetch} from './Services/Api';
 
 class Main extends React.Component {
   constructor(props) {
@@ -17,11 +18,14 @@ class Main extends React.Component {
       phone: '',
       linkedin: '',
       github: '',
+      url: '',
     });
     this.state = localStorageData;
     this.handleInput = this.handleInput.bind(this);
     this.handleImage = this.handleImage.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.isValidated = this.isValidated.bind(this);
+    this.createCardFetch = this.createCardFetch.bind(this);
   }
 
   handleReset() {
@@ -34,6 +38,7 @@ class Main extends React.Component {
       phone: '',
       linkedin: '',
       github: '',
+      url: '',
     });
   }
 
@@ -47,6 +52,7 @@ class Main extends React.Component {
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
     });
+    this.setState({url: ''});
   }
 
   handleImage(img) {
@@ -54,16 +60,52 @@ class Main extends React.Component {
       photo: img,
     });
   }
+
   componentDidUpdate() {
     const {name, job, photo, email, github, linkedin, phone, palette} = this.state;
     localStorage.set('user', {name, job, photo, email, github, linkedin, phone, palette});
   }
 
+  createCardFetch() {
+    if (this.isValidated() === true) {
+      fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: this.state.name,
+          job: this.state.job,
+          photo: this.state.file,
+          phone: this.state.phone,
+          email: this.state.email,
+          linkedin: this.state.linkedin,
+          github: this.state.github,
+          palette: this.state.palette,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => this.setState({url: data.cardURL}));
+    }
+  }
+
+  isValidated() {
+    const {name, job, file, phone, email, linkedin, github} = this.state;
+    const emailRegex = /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i;
+    const phoneRegex = /[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}/;
+
+    if (name && job && file && phoneRegex.test(phone) && emailRegex.test(email) && linkedin && github) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   render() {
     return (
       <section className='cards-page'>
-        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
-        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={parseInt(this.state.phone)} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} formData={this.state} handleReset={this.handleReset} createCardFetch={this.createCardFetch} isValidated={this.isValidated()} />
+        <Card palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );
   }
