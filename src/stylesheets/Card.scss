@@ -80,6 +80,11 @@
       &--icon {
         padding: 10px;
         color: #438792;
+        transition: all ease 3s;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
 
         &:active {
           color: #438792;
