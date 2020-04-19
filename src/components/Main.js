@@ -52,7 +52,7 @@ class Main extends React.Component {
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
     });
-    this.setState({url: ''});
+    this.setState({ url: '' });
   }
 
   handleImage(img) {
@@ -62,8 +62,8 @@ class Main extends React.Component {
   }
 
   componentDidUpdate() {
-    const {name, job, photo, email, github, linkedin, phone, palette} = this.state;
-    localStorage.set('user', {name, job, photo, email, github, linkedin, phone, palette});
+    const { name, job, photo, email, github, linkedin, phone, palette } = this.state;
+    localStorage.set('user', { name, job, photo, email, github, linkedin, phone, palette });
   }
 
   createCardFetch() {
@@ -76,7 +76,7 @@ class Main extends React.Component {
         body: JSON.stringify({
           name: this.state.name,
           job: this.state.job,
-          photo: this.state.file,
+          photo: this.state.photo,
           phone: this.state.phone,
           email: this.state.email,
           linkedin: this.state.linkedin,
@@ -85,16 +85,16 @@ class Main extends React.Component {
         }),
       })
         .then((response) => response.json())
-        .then((data) => this.setState({url: data.cardURL}));
+        .then((data) => this.setState({ url: data.cardURL }));
     }
   }
 
   isValidated() {
-    const {name, job, file, phone, email, linkedin, github} = this.state;
+    const { name, job, photo, phone, email, linkedin, github } = this.state;
     const emailRegex = /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i;
     const phoneRegex = /[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}/;
 
-    if (name && job && file && phoneRegex.test(phone) && emailRegex.test(email) && linkedin && github) {
+    if (name && job && photo && phoneRegex.test(phone) && emailRegex.test(email) && linkedin && github) {
       return true;
     } else {
       return false;
