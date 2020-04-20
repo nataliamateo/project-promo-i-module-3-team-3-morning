@@ -54,9 +54,7 @@
 }
 
 .button__title {
-  font-family: "Open Sans",
-    sans-serif;
-  ;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -68,8 +66,7 @@
   flex-direction: column;
   border-top: solid 1.5px #d8d8d8;
   padding: 32px;
-  font-family: "Open Sans",
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
   &-button {
     border-radius: 5px;
