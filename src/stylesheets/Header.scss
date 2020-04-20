@@ -1,13 +1,38 @@
 /* estilos del header */
 .header {
-  width: 100%;
-  height: 111px;
-  @media all and (min-width: 768px) {
-    height: 10vh;
+  &__container {
+    width: 100%;
+    height: 111px;
+    padding: 31px 0px 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    @media all and (min-width: 768px) {
+      height: 10vh;
+    }
   }
   &__image {
     height: 50px;
     width: 201px;
-    margin: 31px 0px 30px 40px;
+    // margin: 31px 0px 30px 40px;
+  }
+  &__home--container {
+    width: 60px;
+    height: 50px;
+    margin-right: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+      // border: 2px solid #114e4e;
+      background-color: #a2deaf;
+      border-radius: 10px;
+    }
+    .fa-home {
+      font-size: 30px;
+      color: #114e4e;
+    }  
   }
 }
+
