@@ -53,7 +53,7 @@ class Main extends React.Component {
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,
       github: data.name === 'github' ? data.value : this.state.github,
     });
-    this.setState({url: ''});
+    this.setState({ url: '' });
   }
 
   handleImage(img) {
@@ -63,13 +63,13 @@ class Main extends React.Component {
   }
 
   componentDidUpdate() {
-    const {name, job, photo, email, github, linkedin, phone, palette} = this.state;
-    localStorage.set('user', {name, job, photo, email, github, linkedin, phone, palette});
+    const { name, job, photo, email, github, linkedin, phone, palette } = this.state;
+    localStorage.set('user', { name, job, photo, email, github, linkedin, phone, palette });
   }
 
   createCardFetch() {
-    this.setState({loading: true});
     if (this.isValidated() === true) {
+      this.setState({ loading: true });
       fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
         method: 'POST',
         headers: {
@@ -87,12 +87,12 @@ class Main extends React.Component {
         }),
       })
         .then((response) => response.json())
-        .then((data) => this.setState({url: data.cardURL, loading: false}));
+        .then((data) => this.setState({ url: data.cardURL, loading: false }));
     }
   }
 
   isValidated() {
-    const {name, job, photo, phone, email, linkedin, github} = this.state;
+    const { name, job, photo, phone, email, linkedin, github } = this.state;
     const emailRegex = /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i;
     const phoneRegex = /[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{2}/;
 
