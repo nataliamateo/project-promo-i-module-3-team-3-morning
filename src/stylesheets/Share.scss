@@ -1,33 +1,117 @@
-.collapsible__header--share {
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    display: grid;
-    justify-content: space-between;
+.share {
+  border-bottom: solid 0.2rem #d8d8d8;
+}
+
+.button__input {
+  display: none;
+}
+
+.button__box {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background: #d8d8d8;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px auto;
+}
+
+.button-active {
+  background-color: #e17334;
+  width: 199px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all ease 1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.fa-address-card {
+  color: white;
+  padding-right: 0.9rem;
+}
+
+.button__title {
+  font-family: "Open Sans",
+    sans-serif;
+  ;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.share__twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid 1.5px #d8d8d8;
+  padding: 32px;
+  font-family: "Open Sans",
+    sans-serif;
+
+  &-button {
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: #00a0f5;
+    width: 181px;
+    height: 30px;
+    background-color: #00a0f5;
+    border-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 0.5fr 1fr 2fr;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all ease 1s;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
-  .collapsible__header--icon {
-    font-size: 18px;
-    text-align: center;
+
+  &-url {
     color: #e17334;
-  }
-  
-  .collapsible__header--arrow-icon--share {
-    font-size: 18px;
-    color: #54585a;
-    text-align: end;
-    align-self: center;
-  }
-  
-  .collapsible__header__title {
-    font-family: "Open Sans";
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 12px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &-message {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
     color: #54585a;
   }
-  .twitter {
-    margin-bottom: 30px;
+
+  &-a {
+    text-decoration: none;
+    color: white;
   }
-  
+}
+
+.hiddenButton {
+  display: none;
+}
+
+.fa-twitter {
+  margin-right: 10px;
+}

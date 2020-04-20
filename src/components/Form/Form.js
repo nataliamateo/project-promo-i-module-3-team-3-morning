@@ -14,9 +14,12 @@ class Form extends React.Component {
     };
   }
 
+  handleSubmit = (ev) => {
+    ev.preventDefault();
+  };
   render() {
     return (
-      <form action='' method='POST' className='articles-container'>
+      <form onSubmit={this.handleSubmit} className='articles-container'>
         <div className='principal-column'>
           <Collapsable
             nameTitle={data[0].name}
@@ -27,10 +30,10 @@ class Form extends React.Component {
             <Design handleInput={this.props.handleInput} palette={this.props.palette} />
           </Collapsable>
           <Collapsable nameTitle={data[1].name} icons={data[1].icon}>
-            <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} name={this.props.name} job={this.props.job} photo={this.props.photo} email={this.props.email} phone={this.props.phone} linkedin={this.props.linkedin} github={this.props.github} />
+            <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} formData={this.props.formData} />
           </Collapsable>
           <Collapsable nameTitle={data[2].name} icons={data[2].icon}>
-            <Share />
+            <Share createCardFetch={this.props.createCardFetch} isValidated={this.props.isValidated} url={this.props.formData.url} />
           </Collapsable>
         </div>
       </form>
