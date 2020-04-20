@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.82886f01.chunk.css",
+    "main.js": "./static/js/main.a8a027ec.chunk.js",
+    "main.js.map": "./static/js/main.a8a027ec.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.4cdf7577.js",
+    "runtime-main.js.map": "./static/js/runtime-main.4cdf7577.js.map",
+    "static/js/2.70430844.chunk.js": "./static/js/2.70430844.chunk.js",
+    "static/js/2.70430844.chunk.js.map": "./static/js/2.70430844.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.453821e97122a282f90499ab90ecdb98.js": "./precache-manifest.453821e97122a282f90499ab90ecdb98.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.82886f01.chunk.css.map": "./static/css/main.82886f01.chunk.css.map",
+    "static/js/2.70430844.chunk.js.LICENSE.txt": "./static/js/2.70430844.chunk.js.LICENSE.txt",
+    "static/media/ColorInteractions.scss": "./static/media/05.77d08a9f.jpg",
+    "static/media/card.png": "./static/media/card.f5d4be6d.png",
+    "static/media/descarga.svg": "./static/media/descarga.12e5a82a.svg",
+    "static/media/woman.png": "./static/media/woman.16d78db2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cdf7577.js",
+    "static/js/2.70430844.chunk.js",
+    "static/css/main.82886f01.chunk.css",
+    "static/js/main.a8a027ec.chunk.js"
+  ]
+}
