@@ -70,8 +70,8 @@
     border-radius: 5px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     background-color: #00a0f5;
-    width: 290px;
-    height: 48px;
+    width: 181px;
+    height: 30px;
     background-color: #00a0f5;
     border-style: none;
     color: white;
@@ -79,7 +79,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 14px;
     transition: all ease 1s;
 
     &:hover {
@@ -90,7 +90,7 @@
   &-url {
     color: #e17334;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     text-align: center;
   }

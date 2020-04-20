@@ -5,13 +5,11 @@
 
   @media all and (min-width: 768px) {
     width: 50%;
-    // margin: 23px 40px 21px 0px;
     align-self: flex-start;
   }
 
   @media all and (min-width: 1200px) {
     width: 70%;
-    // margin: 21px 40px 20px 0px;
   }
 
   &__container {
@@ -114,4 +112,9 @@
 
 .profile {
   height: 0px;
+}
+
+
+.fa-trash-alt {
+  padding-right: 5px;
 }

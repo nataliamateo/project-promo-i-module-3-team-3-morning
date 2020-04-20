@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Share = (props) => {
   const isValidated = props.isValidated;
-  console.log(props);
+
   return (
     <section className='share__container collapsable-content'>
       <button onClick={props.createCardFetch} className={`${!isValidated === false ? 'button-active' : 'button'}`} id='share_btn'>
