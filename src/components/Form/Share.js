@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../stylesheets/Share.scss';
 import PropTypes from 'prop-types';
+import Loader from '../Loader.js';
 
 const Share = (props) => {
   const isValidated = props.isValidated;
@@ -11,6 +12,7 @@ const Share = (props) => {
         <i className='far fa-address-card'></i>
         <h2 className='button__title'>Crear tarjeta</h2>
       </button>
+      <Loader isLoading={props.isLoading} />
       <div className={` ${!props.url ? 'share__twitter hiddenButton' : 'share__twitter -button'}`}>
         <span className='share__twitter-message'> Tu tarjeta ha sido creada:</span>
         <a href={props.url} className={` ${!props.url ? 'hiddenButton' : 'share__twitter-url'}`} target='_blank' rel='noopener noreferrer'>

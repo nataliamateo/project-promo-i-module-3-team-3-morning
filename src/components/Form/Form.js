@@ -33,7 +33,7 @@ class Form extends React.Component {
             <Fill handleImage={this.props.handleImage} handleInput={this.props.handleInput} formData={this.props.formData} />
           </Collapsable>
           <Collapsable nameTitle={data[2].name} icons={data[2].icon}>
-            <Share createCardFetch={this.props.createCardFetch} isValidated={this.props.isValidated} url={this.props.formData.url} />
+            <Share createCardFetch={this.props.createCardFetch} isValidated={this.props.isValidated} isLoading={this.props.isLoading} url={this.props.formData.url} />
           </Collapsable>
         </div>
       </form>

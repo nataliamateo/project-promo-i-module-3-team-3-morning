@@ -18,6 +18,7 @@ class Main extends React.Component {
       linkedin: '',
       github: '',
       url: '',
+      loading: false,
     });
     this.state = localStorageData;
     this.handleInput = this.handleInput.bind(this);
@@ -38,6 +39,7 @@ class Main extends React.Component {
       linkedin: '',
       github: '',
       url: '',
+      loading: false,
     });
   }
 
@@ -66,6 +68,7 @@ class Main extends React.Component {
   }
 
   createCardFetch() {
+    this.setState({loading: true});
     if (this.isValidated() === true) {
       fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
         method: 'POST',
@@ -84,7 +87,7 @@ class Main extends React.Component {
         }),
       })
         .then((response) => response.json())
-        .then((data) => this.setState({url: data.cardURL}));
+        .then((data) => this.setState({url: data.cardURL, loading: false}));
     }
   }
 
@@ -103,7 +106,7 @@ class Main extends React.Component {
   render() {
     return (
       <section className='cards-page'>
-        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} formData={this.state} handleReset={this.handleReset} createCardFetch={this.createCardFetch} isValidated={this.isValidated()} />
+        <Form handleInput={this.handleInput} handleImage={this.handleImage} palette={this.state.palette} formData={this.state} handleReset={this.handleReset} createCardFetch={this.createCardFetch} isValidated={this.isValidated()} isLoading={this.state.loading} />
         <Card palette={this.state.palette} name={this.state.name} job={this.state.job} photo={this.state.photo} email={this.state.email} phone={this.state.phone} linkedin={this.state.linkedin} github={this.state.github} handleReset={this.handleReset} />
       </section>
     );

@@ -1,5 +1,10 @@
 .share {
   border-bottom: solid 0.2rem #d8d8d8;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .button__input {
