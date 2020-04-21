@@ -1,58 +1,60 @@
+@import './core/_variables';
+
+// color palette 1
+
 .name--palette-1 {
-  color: #114e4e;
+  color: $color1Palette1;
 }
 
 .container--palette-1 {
-  border-left: solid 5px #438792;
+  border-left: solid 5px $color2Palette1;
 }
 
-
 .icon--palette-1 {
-  color: #114e4e;
-
+  color: $color1Palette1;
 }
 
 .list--palette-1 {
-  border: 2px solid #a2deaf;
+  border: 2px solid $color3Palette1;
 }
 
-.list--palette-2 {
-  border: 2px solid #e95626;
-}
-
-
-.list--palette-3 {
-  border: 2px solid #a0c0cf;
-}
-
-.container--palette-2 {
-  border-left: solid 5px #bd1010;
-}
+// color palette 2
 
 .name--palette-2 {
   color: #420101;
-
 }
+
+.container--palette-2 {
+  border-left: solid 5px $color2Palette2;
+}
+
+.icon--palette-2 {
+  color: #420101;
+}
+
+.list--palette-2 {
+  border: 2px solid $color3Palette2;
+}
+
+// color palette 3
 
 .name--palette-3 {
   color: #3e5b65;
-
 }
 
 .container--palette-3 {
   border-left: solid 5px #eab052;
 }
 
-
-.icon--palette-2 {
-  color: #420101;
-
-}
-
 .icon--palette-3 {
   color: #3e5b65;
-
 }
+
+.list--palette-3 {
+  border: 2px solid #a0c0cf;
+}
+
+// color palette 4
 
 .name--palette-4 {
   color: #7126e9;
@@ -62,16 +64,15 @@
   border-left: solid 5px #e926e9;
 }
 
-
 .icon--palette-4 {
   color: #e92667;
-
 }
 
 .list--palette-4 {
   border: 2px solid #7126e9;
 }
 
+// backgrounds
 
 .background--palette-1 {
   background-image: url(../images/01.jpg);
