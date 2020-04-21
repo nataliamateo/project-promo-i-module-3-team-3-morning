@@ -21,7 +21,7 @@
 // color palette 2
 
 .name--palette-2 {
-  color: #420101;
+  color: $color1Palette2;
 }
 
 .container--palette-2 {
@@ -29,7 +29,7 @@
 }
 
 .icon--palette-2 {
-  color: #420101;
+  color: $color1Palette2;
 }
 
 .list--palette-2 {
@@ -39,37 +39,37 @@
 // color palette 3
 
 .name--palette-3 {
-  color: #3e5b65;
+  color: $color1Palette3;
 }
 
 .container--palette-3 {
-  border-left: solid 5px #eab052;
+  border-left: solid 5px $color2Palette3;
 }
 
 .icon--palette-3 {
-  color: #3e5b65;
+  color: $color1Palette3;
 }
 
 .list--palette-3 {
-  border: 2px solid #a0c0cf;
+  border: 2px solid $color3Palette3;
 }
 
 // color palette 4
 
 .name--palette-4 {
-  color: #7126e9;
+  color: $color1Palette4;
 }
 
 .container--palette-4 {
-  border-left: solid 5px #e926e9;
+  border-left: solid 5px $color2Palette4;
 }
 
 .icon--palette-4 {
-  color: #e92667;
+  color: $color1Palette4;
 }
 
 .list--palette-4 {
-  border: 2px solid #7126e9;
+  border: 2px solid $color3Palette4;
 }
 
 // backgrounds
