@@ -49,3 +49,6 @@
 [0421/150429.402:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acceso denegado. (0x5)
 [0421/150429.404:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
 [0421/150429.405:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acceso denegado. (0x5)
+[0421/151107.465:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acceso denegado. (0x5)
+[0421/151107.470:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Ha terminado la canalización. (0x6D)
+[0421/151107.471:ERROR:file_io_win.cc(179)] CreateFile C:\Program Files (x86)\Google\Chrome\settings.dat: Acceso denegado. (0x5)
