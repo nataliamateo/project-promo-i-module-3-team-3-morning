@@ -1,3 +1,5 @@
+@import './core/_variables';
+
 .img-creation {
   display: flex;
   flex-direction: column;
@@ -32,16 +34,16 @@
     width: 75px;
     height: 30px;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid $resetBorder;
     text-transform: uppercase;
-    font-family: "Open Sans";
-    color: #000000;
+    font-family: $textFont;
+    color: $black;
     cursor: pointer;
     align-self: flex-start;
   }
 
   &__card {
-    background-color: white;
+    background-color: $white;
     width: 240px;
     height: auto;
     border-radius: 8px;
@@ -50,11 +52,11 @@
     &--container {
       padding: 0px 0px 0px 20px;
       margin-bottom: 10px;
-      border-left: 5px solid #438792;
+      border-left: 5px solid $brightBlue;
     }
 
     &--name {
-      font-family: "Montserrat";
+      font-family: $cardFont;
       font-size: 18px;
       font-weight: bold;
       line-height: 1.11;
@@ -63,8 +65,8 @@
     }
 
     &--profession {
-      color: #54585a;
-      font-family: "Montserrat";
+      color: $textColor;
+      font-family: $cardFont;
       font-size: 16px;
       line-height: 1.25;
     }
@@ -77,7 +79,7 @@
 
       &--icon {
         padding: 10px;
-        color: #438792;
+        color: $brightBlue;
         transition: all ease 3s;
 
         &:hover {
@@ -85,7 +87,7 @@
         }
 
         &:active {
-          color: #438792;
+          color: $brightBlue;
         }
       }
     }
@@ -113,7 +115,6 @@
 .profile {
   height: 0px;
 }
-
 
 .fa-trash-alt {
   padding-right: 5px;
