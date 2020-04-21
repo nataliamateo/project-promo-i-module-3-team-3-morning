@@ -27,6 +27,10 @@
   align-items: center;
   color: white;
   margin: 20px auto;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button-active {
@@ -40,7 +44,7 @@
   align-items: center;
   color: white;
   margin: 20px auto;
-  cursor: pointer;
+  // cursor: pointer;
   transition: all ease 1s;
 
   &:hover {
