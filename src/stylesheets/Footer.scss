@@ -1,21 +1,22 @@
-// estilos del footer
+@import './core/_variables';
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px #d8d8d8;
-  background-color: #ffffff;
+  border: solid 1px $shareBtnBorder;
+  background-color: $white;
   height: 15vh;
 
   &__copy {
     padding: 18px 61px 12px 61px;
     opacity: 0.5;
-    font-family: 'OpenSans';
+    font-family: $textFont;
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: normal;
-    color: #6b6b6b;
+    color: $textColor2;
   }
 
   &__logo {
