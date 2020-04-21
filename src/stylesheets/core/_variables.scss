@@ -2,6 +2,7 @@
 $black: black;
 $white: white;
 $khaki: #f9f4dc;
+$lightGrey: #d8d8d8;
 $orange: #e17334;
 $darkBlue: #114e4e;
 $brightBlue: #438792;
@@ -15,16 +16,15 @@ $textColor2: #6b6b6b;
 $textColor3: $white;
 $textCard: $darkBlue;
 
-// // backgrounds
-// $backgroundColor1: #f5f5f5;
-// $backgroundColor2: #d5d5d5;
-// $twitter: #00a0f5;
+// backgrounds
+$twitter: #00a0f5;
 
 // borders
 $resetBorder: $white;
 $formBorder: $brightGreen;
 $landingBorder: $orange;
-$footerBorder: #d8d8d8;
+$footerBorder: $lightGrey;
+$shareBtnBorder: $lightGrey;
 
 // user color palettes
 

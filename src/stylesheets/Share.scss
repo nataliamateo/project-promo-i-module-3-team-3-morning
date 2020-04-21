@@ -1,5 +1,7 @@
+@import './core/_variables';
+
 .share {
-  border-bottom: solid 0.2rem #d8d8d8;
+  border-bottom: solid 0.2rem $shareBtnBorder;
 
   &__container {
     display: flex;
@@ -17,7 +19,7 @@
 }
 
 .button {
-  background: #d8d8d8;
+  background: $lightGrey;
   width: 199px;
   height: 50px;
   border-radius: 12px;
@@ -25,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $white;
   margin: 20px auto;
   outline: none;
   &:hover {
@@ -34,7 +36,7 @@
 }
 
 .button-active {
-  background-color: #e17334;
+  background-color: $orange;
   width: 199px;
   height: 50px;
   border-radius: 12px;
@@ -42,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $white;
   margin: 20px auto;
   transition: all ease 1s;
 
@@ -52,12 +54,12 @@
 }
 
 .fa-address-card {
-  color: white;
+  color: $white;
   padding-right: 0.9rem;
 }
 
 .button__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $textFont;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -67,19 +69,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-top: solid 1.5px #d8d8d8;
+  border-top: solid 1.5px $shareBtnBorder;
   padding: 32px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $textFont;
 
   &-button {
     border-radius: 5px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    background-color: #00a0f5;
+    background-color: $twitter;
     width: 181px;
     height: 30px;
-    background-color: #00a0f5;
+    background-color: $twitter;
     border-style: none;
-    color: white;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +95,7 @@
   }
 
   &-url {
-    color: #e17334;
+    color: $orange;
     margin-bottom: 20px;
     font-size: 12px;
     font-weight: 600;
@@ -104,12 +106,12 @@
     margin-bottom: 10px;
     font-size: 20px;
     text-align: center;
-    color: #54585a;
+    color: $textColor;
   }
 
   &-a {
     text-decoration: none;
-    color: white;
+    color: $white;
   }
 }
 
