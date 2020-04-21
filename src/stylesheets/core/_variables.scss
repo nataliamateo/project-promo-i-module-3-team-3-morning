@@ -1,4 +1,9 @@
-// home page color palette
+// fonts
+$textFont: 'Open Sans', sans-serif;
+$cardFont: 'Montserrat', sans-serif;
+$specialFont: 'Merriweather', sans-serif;
+
+// main color palette
 $black: black;
 $white: white;
 $khaki: #f9f4dc;
@@ -8,8 +13,6 @@ $darkBlue: #114e4e;
 $brightBlue: #438792;
 $brightGreen: #a2deaf;
 
-// color items
-
 // texts
 $textColor: #54585a;
 $textColor2: #6b6b6b;
@@ -17,12 +20,13 @@ $textColor3: $white;
 $textCard: $darkBlue;
 
 // backgrounds
+$landingBg: #f5f5f5;
 $twitter: #00a0f5;
 
 // borders
 $resetBorder: $white;
 $formBorder: $brightGreen;
-$landingBorder: $orange;
+$landingBorder: #e1733433;
 $footerBorder: $lightGrey;
 $shareBtnBorder: $lightGrey;
 
@@ -47,11 +51,3 @@ $color3Palette3: #a0c0cf;
 $color1Palette4: #7126e9;
 $color2Palette4: #e926e9;
 $color3Palette4: #e92667;
-
-// fonts
-$textFont: 'Open Sans', sans-serif;
-$cardFont: 'Montserrat', sans-serif;
-$specialFont: 'Merriweather', sans-serif;
-
-// font size
-$defaultFontSize: 16px;
