@@ -39,7 +39,7 @@
   width: 60.6px;
   height: 30.3px;
   border-radius: 60.6px 60.6px 0 0;
-  background: #f8b26a;
+  background: $loaderBg;
   animation: ldio-1z9xhyvqffgi-1 1s linear infinite;
   transform-origin: 30.3px 30.3px;
 }
@@ -80,7 +80,7 @@
   width: 8.08px;
   height: 8.08px;
   border-radius: 50%;
-  background: #a2deaf;
+  background: $brightGreen;
   animation: ldio-1z9xhyvqffgi-3 1s linear infinite;
 }
 
@@ -101,7 +101,7 @@
   height: 101px;
   display: inline-block;
   overflow: hidden;
-  background: #ffffff;
+  background: $white;
   margin: auto;
 
   .ldio-1z9xhyvqffgi {
