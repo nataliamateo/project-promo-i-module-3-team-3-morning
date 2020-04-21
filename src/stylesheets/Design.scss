@@ -1,3 +1,5 @@
+@import './core/_variables';
+
 .collapsible {
   &__header {
     padding-top: 27px;
@@ -6,7 +8,7 @@
     grid-template-columns: 0.5fr 1fr 2fr;
 
     &--icon {
-      color: #e17334;
+      color: $orange;
       font-size: 18px;
       align-self: center;
     }
@@ -15,11 +17,11 @@
       font-family: 'Open Sans';
       font-size: 18px;
       text-transform: uppercase;
-      color: #54585a;
+      color: $textColor;
     }
 
     &--arrow-icon {
-      color: #54585a;
+      color: $textColor;
       font-size: 18px;
       text-align: end;
       align-self: center;
@@ -33,7 +35,7 @@
       font-family: 'Open Sans';
       font-size: 14px;
       text-transform: uppercase;
-      color: #54585a;
+      color: $textColor;
     }
 
     &--position {
@@ -61,20 +63,20 @@
   &--colorA {
     width: 30px;
     height: 25px;
-    background-color: #114e4e;
+    background-color: $color1Palette1;
     margin-left: 10px;
   }
 
   &--colorB {
     width: 30px;
     height: 25px;
-    background-color: #438792;
+    background-color: $color2Palette1;
   }
 
   &--colorC {
     width: 30px;
     height: 25px;
-    background-color: #a2deaf;
+    background-color: $color3Palette1;
   }
 }
 
@@ -82,20 +84,20 @@
   &--colorA {
     width: 30px;
     height: 25px;
-    background-color: #420101;
+    background-color: $color1Palette2;
     margin-left: 10px;
   }
 
   &--colorB {
     width: 30px;
     height: 25px;
-    background-color: #bd1010;
+    background-color: $color2Palette2;
   }
 
   &--colorC {
     width: 30px;
     height: 25px;
-    background-color: #e95626;
+    background-color: $color3Palette2;
   }
 }
 
@@ -103,19 +105,19 @@
   &--colorA {
     width: 30px;
     height: 25px;
-    background-color: #3e5b65;
+    background-color: $color1Palette3;
     margin-left: 10px;
   }
 
   &--colorB {
     width: 30px;
     height: 25px;
-    background-color: #eab052;
+    background-color: $color2Palette3;
   }
 
   &--colorC {
     width: 30px;
     height: 25px;
-    background-color: #a0c0cf;
+    background-color: $color3Palette3;
   }
 }
