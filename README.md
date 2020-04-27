@@ -61,8 +61,9 @@ Scrum
 - Al final de cada sprint hicimos una demo para presentar los resultados conseguidos, y una retrospectiva (retro) para evaluar nuestro trabajo en equipo y mejorar en el siguiente sprint
 
 ### Estructura:
-La estructura de carpetas es la siguiente: 
+La estructura de carpetas es la siguiente:
 
+![Estructura](/src/images/estructura.png)
 
 Creado
 ⌨️ con ❤️ por  Women in react 
