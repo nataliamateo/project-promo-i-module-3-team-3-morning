@@ -1,12 +1,13 @@
 // estilos del footer
 .footer {
+  margin-top: 31px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid 1px #d8d8d8;
   background-color: #ffffff;
-  height: 15vh;
+  height: 10vh;
 
   &__copy {
     padding: 18px 61px 12px 61px;

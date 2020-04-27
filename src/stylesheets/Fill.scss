@@ -1,4 +1,5 @@
 .collapsible {
+  cursor: pointer;
   &__header {
     &--fill {
       display: grid;
@@ -15,7 +16,7 @@
     }
 
     &--title {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 18px;
       text-transform: uppercase;
       color: #54585a;
@@ -32,7 +33,7 @@
 
 .collapsible__content {
   &--style-text {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 14px;
     color: #114e4e;
     line-height: 1.43;
@@ -43,7 +44,7 @@
       border-radius: 3px;
       background-color: #e17334;
       color: #ffffff;
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       border: 0;
       margin-bottom: 20px;
       position: relative;
@@ -84,16 +85,12 @@
   }
 }
 
-
-
 .collapsible__content--style-text.required::after {
   color: #e17334;
-  content: "*";
+  content: '*';
   display: inline;
   font-weight: bold;
 }
-
-
 
 .action {
   text-align: center;
@@ -102,7 +99,7 @@
 .action__upload-btn {
   box-shadow: 0 0 5px rgba(#000, 0.3);
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px;
 }
 
