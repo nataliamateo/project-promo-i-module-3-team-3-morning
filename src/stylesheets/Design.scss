@@ -1,12 +1,12 @@
 @import './core/_variables';
 
 .collapsible {
-  cursor: pointer;
   &__header {
     padding-top: 27px;
     padding-bottom: 10px;
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr;
+    cursor: pointer;
 
     &--icon {
       color: $orange;
