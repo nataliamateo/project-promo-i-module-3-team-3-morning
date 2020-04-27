@@ -3,9 +3,11 @@
 }
 .articles-container {
   align-self: center;
+  height: auto;
   @media all and (min-width: 768px) {
     align-self: flex-start;
     width: 380px;
+    height: auto;
   }
 }
 
@@ -15,4 +17,3 @@
   border-bottom: 1px solid #d8d8d8;
   border-left: 0;
 }
-
