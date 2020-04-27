@@ -1,6 +1,7 @@
 @import './core/_variables';
 
 .collapsible {
+  cursor: pointer;
   &__header {
     padding-top: 27px;
     padding-bottom: 10px;

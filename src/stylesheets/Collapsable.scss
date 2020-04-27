@@ -24,6 +24,9 @@
 
   .collapsible__header--arrow-icon {
     transform: rotate(180deg);
-    padding-right: 150px;
+    padding-right: 174px;
+    @media all and (min-width: 768px) {
+      padding-right: 160px;
+    }
   }
 }

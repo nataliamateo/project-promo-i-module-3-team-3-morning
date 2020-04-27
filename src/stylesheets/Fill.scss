@@ -1,6 +1,7 @@
 @import './core/_variables';
 
 .collapsible {
+  cursor: pointer;
   &__header {
     &--fill {
       display: grid;

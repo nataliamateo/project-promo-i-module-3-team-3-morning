@@ -5,9 +5,11 @@
 }
 .articles-container {
   align-self: center;
+  height: auto;
   @media all and (min-width: 768px) {
     align-self: flex-start;
     width: 380px;
+    height: auto;
   }
 }
 
