@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import woman from '../../images/woman.png';
 
 const Card = (props) => {
-  console.log(props);
   function handleReset(ev) {
     ev.preventDefault();
     //es el nombre de la madre

@@ -46,8 +46,8 @@ class Main extends React.Component {
   handleInput(data) {
     this.setState({
       palette: data.name === 'palette' ? data.value : this.state.palette,
-      name: data.name === 'name' ? data.value : this.state.name,
-      job: data.name === 'job' ? data.value : this.state.job,
+      name: data.name === 'name' ? data.value.replace(/\b\w/g, l => l.toUpperCase()) : this.state.name,
+      job: data.name === 'job' ? data.value.replace(/\b\w/g, l => l.toUpperCase()) : this.state.job,
       email: data.name === 'email' ? data.value : this.state.email,
       phone: data.name === 'phone' ? data.value : this.state.phone,
       linkedin: data.name === 'linkedin' ? data.value : this.state.linkedin,

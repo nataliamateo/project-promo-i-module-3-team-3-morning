@@ -8,6 +8,7 @@
   @media all and (min-width: 768px) {
     width: 50%;
     align-self: flex-start;
+    height: 845px;
   }
 
   @media all and (min-width: 1200px) {
@@ -24,8 +25,8 @@
     width: 100%;
     border-radius: 8px;
 
-    @media all and (min-width: 1200px) {
-      height: 700px;
+    @media all and (min-width: 768px) {
+      height: 812px;
     }
   }
 
@@ -48,11 +49,15 @@
     height: auto;
     border-radius: 8px;
     padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &--container {
       padding: 0px 0px 0px 20px;
       margin-bottom: 10px;
       border-left: 5px solid $brightBlue;
+      align-self: baseline;
     }
 
     &--name {
@@ -74,8 +79,9 @@
     &--list {
       list-style: none;
       display: flex;
-      justify-content: space-between;
-      padding: 10px 62px 12px 20px;
+      justify-content: space-evenly;
+      padding: 12px 30px 12px 30px;
+      align-self: normal;
 
       &--icon {
         padding: 10px;
@@ -108,8 +114,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 250px;
   width: 240px;
+  height: 200px;
 }
 
 .profile {

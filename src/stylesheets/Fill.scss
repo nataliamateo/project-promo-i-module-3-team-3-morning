@@ -2,6 +2,7 @@
 
 .collapsible {
   &__header {
+    cursor: pointer;
     &--fill {
       display: grid;
       grid-template-columns: 0.5fr 1fr 2fr;

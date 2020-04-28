@@ -12,6 +12,7 @@ const Design = (props) => (
         <InputRadio classLabel='palette2' classInput='palette2--radio' id='palette2' value='2' name='palette' checked={props.palette === '2'} colorA='palette2--colorA' colorB='palette2--colorB' colorC='palette2--colorC' handleInput={props.handleInput} />
 
         <InputRadio classLabel='palette3' classInput='palette3--radio' id='palette3' value='3' name='palette' checked={props.palette === '3'} colorA='palette3--colorA' colorB='palette3--colorB' colorC='palette3--colorC' handleInput={props.handleInput} />
+        <InputRadio classLabel='palette4' classInput='palette4--radio' id='palette4' value='4' name='palette' checked={props.palette === '4'} colorA='palette4--colorA' colorB='palette4--colorB' colorC='palette4--colorC' handleInput={props.handleInput} />
       </div>
     </div>
   </fieldset>
