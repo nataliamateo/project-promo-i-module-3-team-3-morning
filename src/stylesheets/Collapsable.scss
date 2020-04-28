@@ -12,19 +12,23 @@
 }
 
 .open {
+
   .collapsible {
     border-bottom: 1px solid transparent;
+
   }
 
   .collapsible__content {
     border-left: 0.1px solid transparent;
     display: block;
-    transition: max-height 1.5s ease-in;
+
+
   }
 
   .collapsible__header--arrow-icon {
     transform: rotate(180deg);
     padding-right: 174px;
+
     @media all and (min-width: 768px) {
       padding-right: 160px;
     }

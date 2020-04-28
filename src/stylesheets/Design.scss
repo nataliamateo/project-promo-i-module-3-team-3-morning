@@ -51,7 +51,8 @@
 
 .palette1,
 .palette2,
-.palette3 {
+.palette3,
+.palette4 {
   display: flex;
   margin-bottom: 20px;
 
@@ -120,5 +121,26 @@
     width: 30px;
     height: 25px;
     background-color: $color3Palette3;
+  }
+}
+
+.palette4 {
+  &--colorA {
+    width: 30px;
+    height: 25px;
+    background-color: rgb(87, 8, 87);
+    margin-left: 10px;
+  }
+
+  &--colorB {
+    width: 30px;
+    height: 25px;
+    background-color: rgb(180, 100, 150);
+  }
+
+  &--colorC {
+    width: 30px;
+    height: 25px;
+    background-color: rgb(224, 155, 223);
   }
 }
